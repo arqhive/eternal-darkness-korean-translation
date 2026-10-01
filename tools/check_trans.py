@@ -73,8 +73,7 @@ def main(path):
                 pass
             elif jp and not kp:
                 probs.append((id_, '높임', '일본어 존대인데 번역 반말: %s | %s' % (u['ja'], k)))
-            elif kp and not jp and re.search(r'(だ|よ|わ|の|ぞ|ぜ|な|さ|か)[。！？…]*$', ja_last[-1].strip()):
-                probs.append((id_, '높임', '일본어 반말인데 번역 존대: %s | %s' % (u['ja'], k)))
+            # 10/2 B안: 일본어 보통체라도 상대에게 하는 말이면 한국어는 존대로 통일 → 「일본어 반말인데 번역 존대」는 문제로 보지 않음
     for p in probs:
         print(*p, sep=' | ')
     print('검사 %d줄, 문제 %d건' % (len(ko), len(probs)))
