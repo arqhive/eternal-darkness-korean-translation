@@ -1,0 +1,11 @@
+{
+ "boot:DOM_PUZZLE/REDEFFIGY_DESC": "\\ar루비 조각상\\aw\n패배한 \\ac전사\\aw의 작은 조각상.\n보이지 않는 승자에게 공손히 무릎 꿇고 있다.\n짙붉은 \\ac루비\\aw로 만들어졌다.",
+ "boot:DOM_PUZZLE/REDEFFIGY_INV": "루비\n조각상",
+ "boot:DOM_PUZZLE/REDEFFIGY_PICKUP": "~p은(는) \\ac루비 조각상\\aw을\n찾았다!",
+ "boot:DOM_PUZZLE/BLUEEFFIGY_DESC": "\\ab사파이어 조각상\\aw\n\\ab마법사\\aw의 작은 조각상.\n보이지 않는 힘에 미쳐 버린 모습이다.\n광택이 나는 \\ab사파이어\\aw로 만들어졌다.",
+ "boot:DOM_PUZZLE/BLUEEFFIGY_INV": "사파이어\n조각상",
+ "boot:DOM_PUZZLE/BLUEEFFIGY_PICKUP": "~p은(는) \\ab사파이어 조각상\\aw을\n찾았다!",
+ "boot:DOM_PUZZLE/GREENEFFIGY_DESC": "\\ag에메랄드 조각상\\aw\n보이지 않는 적에게 짓밟힌\n\\ax학자\\aw의 작은 조각상.\n맑은 \\ax에메랄드\\aw로 만들어졌다.",
+ "boot:DOM_PUZZLE/GREENEFFIGY_INV": "에메랄드\n조각상",
+ "boot:DOM_PUZZLE/GREENEFFIGY_PICKUP": "~p은(는) \\ax에메랄드 조각상\\aw을\n찾았다!"
+}

@@ -1,0 +1,16 @@
+{
+ "boot:INFO/SOL_ENV_PICKUP": "~p은(는) \\ay봉인된 봉투\\aw를 찾았다!",
+ "boot:INFO/OPEN_SOL_ENV": "\\ay봉투\\aw를 찢어 열자\n안에서 무언가가 나왔다!",
+ "boot:INFO/HISTJOURN1_BEFORE": "\\ay역사서\\aw\n마르고 먼지 앉은 가죽으로 장정한 곰팡내\n나는 낡은 책. 이 땅에 정착민이 오기 전까지\n거슬러 올라가는 \\ay로이바스 가문의 초기 역사\\aw가\n적혀 있다. 책장 사이에 무언가 끼워져 있다!\n\n꺼내겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:INFO/HISTJOURN2_BEFORE": "\\ay역사서\\aw\n마르고 먼지 앉은 가죽으로 장정한 곰팡내\n나는 낡은 책. 아마 150년쯤 전부터 이어지는\n\\ay로이바스 가문의 \"최근\" 역사\\aw가\n적혀 있다. 책장 사이에 무언가 끼워져 있다!\n\n꺼내겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:INFO/SOL_ENV_BEFORE": "\\ay봉인된 봉투\\aw\n꽤 공식적인 것 같다.\n\n\\ay봉투\\aw를 열겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:INFO/MAXLETTER_DROP": "맥스가 \\am영원한 어둠의 서\\aw를 들어 올리자\n책장 사이에서 편지 한 통이 빠져나왔다.\n맥스는 바닥에 떨어지려는 편지를\n재빨리 낚아챘다.",
+ "boot:INFO/GATE4_INV": "에드워드의\n숨겨진 쪽지",
+ "boot:INFO/GATE4_PICKUP": "알렉스는 책장 사이에 끼워진\n종잇조각을 찾았다.\n\\ay에드워드의 쪽지\\aw 같다.",
+ "boot:INFO/ORDERS_INV": "병사의\n명령서",
+ "boot:INFO/ORDERS_PICKUP": "~p은(는) \\ay병사의 명령서\\aw를\n손에 넣었다!",
+ "boot:INFO/MAXJOURN5_INV": "M. 로이바스\n일지\n마지막 기록",
+ "boot:INFO/MAXJOURN5_PICKUP": "~p은(는)\n\\ay맥시밀리언 로이바스 일지의 한 장\\aw을\n찾았다!",
+ "boot:INFO/MAX_LETTER4_INV": "네 번째\n편지",
+ "boot:INFO/MAX_LETTER4_PICKUP": "\\ay봉투\\aw 안에는 맥스의 아버지가\n보좌관 한 사람에게 보낸 \\ay편지\\aw가\n들어 있었다."
+}

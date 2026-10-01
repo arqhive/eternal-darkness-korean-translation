@@ -1,0 +1,4 @@
+{
+ "boot:BUTTON/BOSS_RUNE_MOVE": "\\i2\\i3\\s0.3\\n\n\\s0.9움직인다\\s1\\n",
+ "boot:BUTTON/SCRIBE_RUN_NO_MOVE": "\\i20\\s0.3\\n\n\\s0.9룬 결정\\n\n\\i21\\s0.3\\n\n\\s0.9그만둔다"
+}

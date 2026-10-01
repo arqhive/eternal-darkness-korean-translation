@@ -1,0 +1,11 @@
+{
+ "boot:GEMS/BLUE_DESC": "\\ab사파이어\\aw\n눈부신 세공 덕분에 밝게 빛난다. 빛이\n면 안에 갇혀 이 세상 것이 아닌 듯한\n빛깔을 띤다.",
+ "boot:GEMS/BLUE_INV": "사파이어",
+ "boot:GEMS/BLUE_PICKUP": "~p은(는) \\ab사파이어\\aw를 찾았다!",
+ "boot:GEMS/GREEN_DESC": "\\ag에메랄드\\aw\n깊은 \\ag녹색\\aw 표면이 안쪽의 빛을 완벽하게\n되비춘다. 명장의 솜씨로 세공되었다.",
+ "boot:GEMS/GREEN_INV": "에메랄드",
+ "boot:GEMS/GREEN_PICKUP": "~p은(는) \\ag에메랄드\\aw를 찾았다!",
+ "boot:GEMS/RED_DESC": "\\ar루비\\aw\n정성 어린 솜씨로 세공한 \\ar진홍빛 루비\\aw.\n겹겹의 면 안에 빛이 갇혀 속에서부터\n빛나는 것처럼 보인다.",
+ "boot:GEMS/RED_INV": "루비",
+ "boot:GEMS/RED_PICKUP": "~p은(는) \\ar루비\\aw를 찾았다!"
+}

@@ -1,0 +1,14 @@
+{
+ "boot:ALEX_END/PEDESTAL_FR_1_DESC": "\\ay받침대 조각\\aw\n부서진 석조물의 \\ay일부\\aw다.\n진열용 \\ay받침대\\aw의 윗부분 같다.",
+ "boot:ALEX_END/PEDESTAL_FR_1_INV": "받침대\n조각",
+ "boot:ALEX_END/PEDESTAL_FR_1_PICKUP": "~p은(는) \\ay받침대 조각\\aw을 찾았다.",
+ "boot:ALEX_END/PEDESTAL_FR_2_DESC": "\\ay받침대 조각\\aw\n부서진 석조물의 \\ay일부\\aw다.\n진열용 \\ay받침대\\aw의 윗부분 같다.",
+ "boot:ALEX_END/PEDESTAL_FR_2_INV": "받침대\n조각",
+ "boot:ALEX_END/PEDESTAL_FR_2_PICKUP": "~p은(는) \\ay받침대 조각\\aw을 찾았다.",
+ "boot:ALEX_END/PEDESTAL_BROKEN_INV": "부서진\n받침대 윗부분",
+ "boot:ALEX_END/PEDESTAL_BROKEN_PICKUP": "~p은(는) \\ay부서진 받침대 윗부분\\aw을\n맞춰 놓았다!",
+ "boot:ALEX_END/PEDESTAL_BROKEN_DESC": "\\ay부서진 받침대 윗부분\\aw\n진열용 \\ay받침대\\aw의 윗부분을 대충 맞춰 놓았다.\n지금 상태로는 붙어 있지 않을 것이다.",
+ "boot:ALEX_END/PEDESTAL_FIXED_INV": "받침대\n조각",
+ "boot:ALEX_END/PEDESTAL_FIXED_PICKUP": "~p은(는) \\ay받침대 조각\\aw을 찾았다.",
+ "boot:ALEX_END/PEDESTAL_FIXED_DESC": "\\ay받침대 조각\\aw\n진열용 받침대의 윗부분이다. 나머지와\n이어져 있지 않다는 것만 빼면 상태가\n아주 좋다. 이제 제대로 쓸 수 있다."
+}

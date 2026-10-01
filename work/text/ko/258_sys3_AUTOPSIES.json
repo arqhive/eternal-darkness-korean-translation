@@ -1,0 +1,16 @@
+{
+ "boot:AUTOPSIES/mant_zombie": "만토록 좀비",
+ "boot:AUTOPSIES/chat_zombie": "차투르가 좀비",
+ "boot:AUTOPSIES/xel_zombie": "젤로타스 좀비",
+ "boot:AUTOPSIES/uly_zombie": "울리아오스 좀비",
+ "boot:AUTOPSIES/trapper": "트래퍼",
+ "boot:AUTOPSIES/chat_bonethief": "차투르가 본시프",
+ "boot:AUTOPSIES/xel_bonethief": "젤로타스 본시프",
+ "boot:AUTOPSIES/uly_bonethief": "울리아오스 본시프",
+ "boot:AUTOPSIES/chat_horror": "차투르가 호러",
+ "boot:AUTOPSIES/xel_horror": "젤로타스 호러",
+ "boot:AUTOPSIES/uly_horror": "울리아오스 호러",
+ "boot:AUTOPSIES/chat_guardian": "차투르가 가디언",
+ "boot:AUTOPSIES/xel_guardian": "젤로타스 가디언",
+ "boot:AUTOPSIES/uly_guardian": "울리아오스 가디언"
+}

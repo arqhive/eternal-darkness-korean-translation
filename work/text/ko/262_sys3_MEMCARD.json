@@ -1,0 +1,17 @@
+{
+ "boot:MEMCARD/alex": "알렉스",
+ "boot:MEMCARD/pious": "피우스",
+ "boot:MEMCARD/ellia": "엘리아",
+ "boot:MEMCARD/anthony": "앤서니",
+ "boot:MEMCARD/karim": "카림",
+ "boot:MEMCARD/max": "맥스",
+ "boot:MEMCARD/lindsey": "린지",
+ "boot:MEMCARD/paul": "폴",
+ "boot:MEMCARD/roberto": "로베르토",
+ "boot:MEMCARD/edward": "에드워드",
+ "boot:MEMCARD/peter": "피터",
+ "boot:MEMCARD/mike": "마이클",
+ "boot:MEMCARD/time_played": "플레이 시간",
+ "boot:MEMCARD/accessing": "접근 중…",
+ "boot:MEMCARD/deleting": "삭제 중…"
+}

@@ -1,0 +1,22 @@
+*.iso
+*.7z
+*.log
+extract/
+build/
+__pycache__/
+# work/ 는 게임에서 뽑은 원문·그림·글꼴이 많아 통째로 빼고, 직접 만든 번역·설정만 넣는다(10/2)
+work/*
+!work/text/
+work/text/*
+!work/text/ko/
+!work/text/progress.md
+!work/text/skip.json
+!work/text/check_exceptions.txt
+!work/gfx/
+work/gfx/*
+!work/gfx/plan.tsv
+!work/gfx/book_cfg.json
+!work/gfx/autopsy_regions.json
+!work/gfx/autopsy_boxes.json
+!work/gfx/autopsy_ko.json
+!work/glyph_fix.tsv

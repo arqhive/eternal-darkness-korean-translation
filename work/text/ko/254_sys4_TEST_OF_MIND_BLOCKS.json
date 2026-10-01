@@ -1,0 +1,14 @@
+{
+ "boot:TEST_OF_MIND_BLOCKS/CHAT_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/ULY_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/XEL_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/MANT_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/CHAT_INV": "화강암\n블록",
+ "boot:TEST_OF_MIND_BLOCKS/ULY_INV": "화강암\n블록",
+ "boot:TEST_OF_MIND_BLOCKS/XEL_INV": "화강암\n블록",
+ "boot:TEST_OF_MIND_BLOCKS/MANT_INV": "화강암\n블록",
+ "boot:TEST_OF_MIND_BLOCKS/MANT_DESC": "\\ay화강암 블록\\aw\n모서리가 날카로운 화강암 덩어리.\n한쪽 면에 선으로 된 기묘한 문양이 새겨져\n있고, 검은 그림자에 물든 \\am보랏빛\\aw으로\n채워져 있다.",
+ "boot:TEST_OF_MIND_BLOCKS/ULY_DESC": "\\ay화강암 블록\\aw\n모서리가 날카로운 화강암 덩어리.\n한쪽 면에 선으로 된 기묘한 문양이 새겨져\n있고, \\ab유령 같은 푸른빛\\aw을 띠고 있다.",
+ "boot:TEST_OF_MIND_BLOCKS/XEL_DESC": "\\ay화강암 블록\\aw\n모서리가 날카로운 화강암 덩어리.\n한쪽 면에 선으로 된 기묘한 문양이 새겨져\n있고, \\ag칙칙한 녹색\\aw을 띠고 있다.",
+ "boot:TEST_OF_MIND_BLOCKS/CHAT_DESC": "\\ay화강암 블록\\aw\n모서리가 날카로운 화강암 덩어리.\n한쪽 면에 선으로 된 기묘한 문양이 새겨져\n있고, \\ar핏빛\\aw을 띠고 있다."
+}

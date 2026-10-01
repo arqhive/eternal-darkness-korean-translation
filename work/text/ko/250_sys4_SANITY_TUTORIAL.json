@@ -1,0 +1,6 @@
+{
+ "boot:SANITY_TUTORIAL/STEP_ONE": "\\ag괴물에게 들키면 정신력을 잃는다.\n정신력 게이지가 줄어들고\n캐릭터가 녹색으로 고동친다.\n\n조심할 것!\n\n정신력을 잃으면 지각이 흐트러지고\n결국 \\ar체력\\ag까지 잃게 된다!\\ag",
+ "boot:SANITY_TUTORIAL/STEP_TWO": "\\ag괴물에게 마무리 일격을 가하면\n정신력이 회복된다.\\aw",
+ "boot:SANITY_TUTORIAL/STEP_THREE": "\\ag괴물을 쓰러뜨리면\n이따금 정신력이 회복된다.\\aw",
+ "boot:SANITY_TUTORIAL/STEP_FOUR": "\\ar이 문구는 이제 쓰이지 않습니다."
+}

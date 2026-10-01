@@ -1,0 +1,14 @@
+{
+ "boot:ARTIFACTS/CHATTURGA_INV": "차투르가의\n정수",
+ "boot:ARTIFACTS/CHATTURGA_DESC": "\\ar차투르가의 정수\\aw\n\n차투르가의 발톱이 억눌린 폭력으로 들끓으며\n기이한 \\ar핏빛\\aw 기운을 내뿜는다.",
+ "boot:ARTIFACTS/CHATTURGA_PICKUP": "~p은(는) \\ac차투르가의 정수\\aw를\n손에 넣었다!",
+ "boot:ARTIFACTS/ULYOATH_INV": "울리아오스의\n정수",
+ "boot:ARTIFACTS/ULYOATH_DESC": "\\ab울리아오스의 정수\\aw\n그 장막은 차원에서 차원으로, 현실에서\n현실로 옮겨 다닌다. 결코 존재한 적이\n없지만, 존재하지 않은 적도 없다.",
+ "boot:ARTIFACTS/ULYOATH_PICKUP": "~p은(는) \\ab울리아오스의 정수\\aw를\n손에 넣었다!",
+ "boot:ARTIFACTS/XELATOTH_INV": "젤로타스의\n정수",
+ "boot:ARTIFACTS/XELATOTH_DESC": "\\ag젤로타스의 정수\\aw\n젤로타스의 인장이 섬뜩한 \\ax녹색\\aw 빛을\n내뿜는다. 마치 주변 공기가 광기 그 자체로\n자아지는 것 같다.",
+ "boot:ARTIFACTS/XELATOTH_PICKUP": "~p은(는) \\ax젤로타스의 정수\\aw를\n손에 넣었다!",
+ "boot:ARTIFACTS/MANTOROK_INV": "만토록의\n정수",
+ "boot:ARTIFACTS/MANTOROK_DESC": "\\am만토록의 정수\\aw\n\\am만토록\\aw의 심장이 불경한 생명으로 고동친다.\n시체의 신 \\am만토록\\aw은 다른 곳에서 썩어 가고\n있지만, 그 힘은 이 유물 안에 깃들어 있다.",
+ "boot:ARTIFACTS/MANTOROK_PICKUP": "~p은(는) \\am만토록의 정수\\aw를\n손에 넣었다!"
+}

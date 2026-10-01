@@ -1,0 +1,12 @@
+{
+ "boot:BOOK_BUTTONS/RIGHT_OPTIONS": "\\i17\\ay~95\n옵션",
+ "boot:BOOK_BUTTONS/LEFT_OPTIONS": "~127\\aw\\i16\\ay\n옵션",
+ "boot:BOOK_BUTTONS/RIGHT_INVENTORY": "\\i17\\ay~95\n소지품",
+ "boot:BOOK_BUTTONS/LEFT_INVENTORY": "~127\\aw\\i16\\ay\n소지품",
+ "boot:BOOK_BUTTONS/RIGHT_MAP": "\\i17\\ay~95\n맵",
+ "boot:BOOK_BUTTONS/LEFT_MAP": "~127\\aw\\i16\\ay\n맵",
+ "boot:BOOK_BUTTONS/RIGHT_MAGICK": "\\i17\\ay~95\n스펠",
+ "boot:BOOK_BUTTONS/LEFT_MAGICK": "~127\\aw\\i16\\ay\n스펠",
+ "boot:BOOK_BUTTONS/RIGHT_CINEMATIC": "\\i17\\ay~95\n저널",
+ "boot:BOOK_BUTTONS/LEFT_CINEMATIC": "~127\\aw\\i16\\ay\n저널"
+}

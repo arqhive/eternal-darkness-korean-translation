@@ -1,0 +1,3 @@
+# 높임 검사 오탐(사람이 확인): id<TAB>이유
+cin:Act08c/MONK_You_have_proven	「勇気のあるお方よ」는 존칭 부르는 말, 서술어 없음 → 수도사 다른 줄처럼 존대
+boot:ACT15_XEL/XEL2_We_know_not	「私ですら」의 です는 조사(~조차), 문장은 반말(ではない)

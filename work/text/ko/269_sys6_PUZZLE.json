@@ -1,0 +1,8 @@
+{
+ "boot:PUZZLE/Y_LIGHT": "\\i18\\s0.8\n켠다",
+ "boot:PUZZLE/Y_EXTINGUISH": "\\i18\\s0.8\n끈다",
+ "boot:PUZZLE/A_LIGHT": "\\i20\\s0.8\n켠다",
+ "boot:PUZZLE/A_EXTINGUISH": "\\i20\\s0.8\n끈다",
+ "boot:PUZZLE/X_LIGHT": "\\i19\\s0.8\n켠다",
+ "boot:PUZZLE/X_EXTINGUISH": "\\i19\\s0.8\n끈다"
+}

@@ -1,0 +1,20 @@
+{
+ "boot:MAGIC_TUTORIAL/STEPTWO_ONE": "\\ab주문 설명을 보려면\\aw\n\\i20\\ab/\\aw\\i21\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/SPELLPAGE": "\\ay주문 두루마리\\ab를 살펴보려면\n\\aw\\i20\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/CREATE_SPELL": "\\ab새 주문을\n만들려면 \\aw\\i20\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/STEPTHREE_ONE": "\\ab새 주문을 만들려면\\aw\n\\i20\\ab/\\aw\\i21\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/CHOOSE_CIRCLE": "\\ab\\ay힘의 원\\ab을 골라 주십시오.\\aw",
+ "boot:MAGIC_TUTORIAL/CHOOSE_ALIGNMENT": "\\ay속성\\ab을 골라 주십시오.\\aw",
+ "boot:MAGIC_TUTORIAL/CHOOSE_ACTION": "\\ay행동 룬\\ab을 골라 주십시오.\\aw",
+ "boot:MAGIC_TUTORIAL/CHOOSE_SUBJECT": "\\ay대상 룬\\ab을 골라 주십시오.\\aw",
+ "boot:MAGIC_TUTORIAL/INFORM_PLAYER": "\\ab~p은(는) \\ay인챈트\n아이템\\ab 주문을 만들었다!",
+ "boot:MAGIC_TUTORIAL/ASSIGN_TO_BUTTON": "\\ay주문(마법)\\ab은 이 책에서 바로 외거나\n다섯 개의 \\ay빠른 주문 버튼\\ab 중\n하나에 지정해 쓸 수 있다.\n표시된 \\ay빠른 주문 버튼\\ab 하나를 누르면\n그 버튼에 주문이 지정되어, 이 과정을\n되풀이하지 않고 주문을 쓸 수 있다.\n\\ay빠른 주문\\ab을 지정할\n버튼을 눌러 주십시오.",
+ "boot:MAGIC_TUTORIAL/STEPONE_ONE": "\\ab마법 체계에 대해\n자세히 알려면 \\aw\\i20\\ab/\\aw\\i21\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/MOVEMENT_WARNING": "\\ab주문을 외는 동안 \\ay움직이거나 행동\\ab하지\n않도록 조심할 것.\n주문이 취소되어 버린다.\n적에게 공격받아도 마찬가지다.\\aw",
+ "boot:MAGIC_TUTORIAL/SPELL_DESC": "\\ab주문은 \\ay힘의 원\\ab과\n서로 다른 \\ay룬\\ab 세 개로 이루어진다.\\aw",
+ "boot:MAGIC_TUTORIAL/PARGON": "\\ab주문에 \\ay파르곤 룬\\ab을\n더하면 주문의 위력이 커진다.\\aw",
+ "boot:MAGIC_TUTORIAL/RUNE_SPELL": "\\ay룬\\ab은 \\ay주문\\ab을 이루는 핵심이다.\n여러 \\ay룬\\ab을 여러 방식으로 조합해\n다양한 \\ay주문\\ab을 만들어 낼 수 있다.\n\\ay주문\\ab이란 사람의 타고난 능력을\n높이는 마법이다.",
+ "boot:MAGIC_TUTORIAL/CIRCLE_SPELL": "\\ay힘의 원\\ab은 \\ay주문(마법)\\ab의\n힘의 크기를 나타낸다.\n원의 점이 많을수록\n더 강한 주문을 쓸 수 있다.",
+ "boot:MAGIC_TUTORIAL/GOTO_ASSIGN_TO_BUTTON": "\\ab주문을 버튼에\n지정하려면 \\aw\\i20\\ab을 누른다.\\aw",
+ "boot:MAGIC_TUTORIAL/SPELL_ASSIGNED": "\\ab\\ay~z\\aw\\ab 주문이\n이 버튼에 지정되었습니다."
+}
