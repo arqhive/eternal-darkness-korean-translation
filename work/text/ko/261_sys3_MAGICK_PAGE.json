@@ -2,7 +2,7 @@
  "boot:MAGICK_PAGE/spell_number": "주문 ~i",
  "boot:MAGICK_PAGE/none": "없음",
  "boot:MAGICK_PAGE/discovered_spell_name": "~z 주문을\n쓸 수 있게 되었다!",
- "boot:MAGICK_PAGE/discovered_spell_number": "주문 ~i을(를)\n쓸 수 있게 되었다!",
+ "boot:MAGICK_PAGE/discovered_spell_number": "주문 ~i를(을)\n쓸 수 있게 되었다!",
  "boot:MAGICK_PAGE/select_power": "점의\n수를 고른다\n~t",
  "boot:MAGICK_PAGE/select_alignment": "속성을\n고른다",
  "boot:MAGICK_PAGE/select_rune": "룬을 고른다",

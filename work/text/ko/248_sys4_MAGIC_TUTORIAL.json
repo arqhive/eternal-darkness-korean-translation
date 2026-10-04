@@ -7,7 +7,7 @@
  "boot:MAGIC_TUTORIAL/CHOOSE_ALIGNMENT": "\\ay속성\\ab을 골라 주십시오.\\aw",
  "boot:MAGIC_TUTORIAL/CHOOSE_ACTION": "\\ay행동 룬\\ab을 골라 주십시오.\\aw",
  "boot:MAGIC_TUTORIAL/CHOOSE_SUBJECT": "\\ay대상 룬\\ab을 골라 주십시오.\\aw",
- "boot:MAGIC_TUTORIAL/INFORM_PLAYER": "\\ab~p은(는) \\ay인챈트\n아이템\\ab 주문을 만들었다!",
+ "boot:MAGIC_TUTORIAL/INFORM_PLAYER": "\\ab~p는(은) \\ay인챈트\n아이템\\ab 주문을 만들었다!",
  "boot:MAGIC_TUTORIAL/ASSIGN_TO_BUTTON": "\\ay주문(마법)\\ab은 이 책에서 바로 외거나\n다섯 개의 \\ay빠른 주문 버튼\\ab 중\n하나에 지정해 쓸 수 있다.\n표시된 \\ay빠른 주문 버튼\\ab 하나를 누르면\n그 버튼에 주문이 지정되어, 이 과정을\n되풀이하지 않고 주문을 쓸 수 있다.\n\\ay빠른 주문\\ab을 지정할\n버튼을 눌러 주십시오.",
  "boot:MAGIC_TUTORIAL/STEPONE_ONE": "\\ab마법 체계에 대해\n자세히 알려면 \\aw\\i20\\ab/\\aw\\i21\\ab을 누른다.\\aw",
  "boot:MAGIC_TUTORIAL/MOVEMENT_WARNING": "\\ab주문을 외는 동안 \\ay움직이거나 행동\\ab하지\n않도록 조심할 것.\n주문이 취소되어 버린다.\n적에게 공격받아도 마찬가지다.\\aw",

@@ -1,11 +1,11 @@
 {
  "boot:CIRCLES/3_CIRC_DESC": "\\ay3점 힘의 원\\aw\n\\ay힘의 원\\aw은 마법 주문의 기본 틀이다.\n점이 많을수록 더 강한 주문을 쓸 수 있다.",
  "boot:CIRCLES/3_CIRC_INV": "3점\n힘의 원",
- "boot:CIRCLES/3_CIRC_PICKUP": "~p은(는) \\ay힘의 원\\aw을 손에 넣었다!",
+ "boot:CIRCLES/3_CIRC_PICKUP": "~p는(은) \\ay힘의 원\\aw을 손에 넣었다!",
  "boot:CIRCLES/5_CIRC_DESC": "\\ay5점 힘의 원\\aw\n\\ay힘의 원\\aw은 마법 주문의 기본 틀이다.\n점이 많을수록 더 강한 주문을 쓸 수 있다.",
  "boot:CIRCLES/5_CIRC_INV": "5점\n힘의 원",
- "boot:CIRCLES/5_CIRC_PICKUP": "~p은(는) \\ay힘의 원\\aw을 손에 넣었다!",
+ "boot:CIRCLES/5_CIRC_PICKUP": "~p는(은) \\ay힘의 원\\aw을 손에 넣었다!",
  "boot:CIRCLES/7_CIRC_DESC": "\\ay7점 힘의 원\\aw\n\\ay힘의 원\\aw은 마법 주문의 기본 틀이다.\n점이 많을수록 더 강한 주문을 쓸 수 있다.",
  "boot:CIRCLES/7_CIRC_INV": "7점\n힘의 원",
- "boot:CIRCLES/7_CIRC_PICKUP": "~p은(는) \\ay힘의 원\\aw을 손에 넣었다!"
+ "boot:CIRCLES/7_CIRC_PICKUP": "~p는(은) \\ay힘의 원\\aw을 손에 넣었다!"
 }

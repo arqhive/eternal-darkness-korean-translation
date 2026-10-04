@@ -1,8 +1,8 @@
 {
- "boot:TEST_OF_MIND_BLOCKS/CHAT_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
- "boot:TEST_OF_MIND_BLOCKS/ULY_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
- "boot:TEST_OF_MIND_BLOCKS/XEL_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
- "boot:TEST_OF_MIND_BLOCKS/MANT_PICKUP": "~p은(는) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/CHAT_PICKUP": "~p는(은) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/ULY_PICKUP": "~p는(은) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/XEL_PICKUP": "~p는(은) \\ay화강암 블록\\aw을 주웠다.",
+ "boot:TEST_OF_MIND_BLOCKS/MANT_PICKUP": "~p는(은) \\ay화강암 블록\\aw을 주웠다.",
  "boot:TEST_OF_MIND_BLOCKS/CHAT_INV": "화강암\n블록",
  "boot:TEST_OF_MIND_BLOCKS/ULY_INV": "화강암\n블록",
  "boot:TEST_OF_MIND_BLOCKS/XEL_INV": "화강암\n블록",
