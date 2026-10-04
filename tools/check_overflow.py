@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import measure
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
-HANGUL_W = 26
+HANGUL_W = 23   # build_full.HANGUL_ADV 와 같게(10/4 26→23)
 VAR_W = 26 * 6   # 변수 자리(이름 등) 예상 폭: 한글 6자 기준(임시)
 
 # 창 종류별 한계: (한 줄 최대 px, 최대 줄 수). docs/windows.md 참고(2026-10-01).

@@ -37,6 +37,7 @@ BOOTS = ['JBootPak.bin', 'JBootPkW.bin', 'JBtPakES.bin', 'JBtPakJS.bin']
 FONTS = ['JFonts.tpl', 'JfontsEAD.tpl']
 GLYPH_FONT = os.path.join(ROOT, 'work', 'fonts', 'SCDream4.otf')   # 10/2 사용자 결정: 에스코어 드림 4, 힌팅 방식
 GLYPH_PX = 22
+HANGUL_ADV = 23   # 한글 진행 폭(글자 그림 17~21px). 10/4 사용자 결정 26→23(자간 줄임)
 GLYPH_DY = -1   # 가나 칸 위치(2~24px)에 맞춤. 10/2 실기 제보(메모리 카드 상자 겹침) 뒤 글꼴별로 맞춰 정함
 SYM_SRC = {'…': 0x109, '「': 0x10C, '」': 0x10D, '『': 0x10E, '』': 0x10F, '・': 0x103, '·': 0x103, '　': 0x100}
 
@@ -208,7 +209,7 @@ def widths(cs):
     blk = d[o:o + s]
     W = {}
     for ch, code in cs.map.items():
-        W[code] = blk[5 + SYM_SRC[ch]] if ch in SYM_SRC else 26
+        W[code] = blk[5 + SYM_SRC[ch]] if ch in SYM_SRC else HANGUL_ADV
     return W
 
 
