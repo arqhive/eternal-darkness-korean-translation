@@ -195,7 +195,7 @@ def build_fonts(cs, files):
         for sh, img in sheets.items():
             i, w, h, fmt, doff = imgs[sh]
             assert fmt == 14
-            enc = cmpr_full.encode(np.asarray(img))
+            enc = cmpr_full.encode_font(np.asarray(img))   # 10/4: 원본처럼 고정 팔레트(손실 없음)
             d[doff:doff + len(enc)] = enc
         files[fn] = bytes(d)
     print('폰트', FONTS, '글자', len(cs.map), '칸 0x%X~0x%X' % (min(cs.map.values()), max(cs.map.values())))

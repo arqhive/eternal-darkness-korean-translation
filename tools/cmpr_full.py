@@ -80,3 +80,26 @@ def encode(img):
         out[:, 4 + i] = ((bits >> np.uint64(8 * (3 - i))) & np.uint64(255)).astype(np.uint8)
     out[allt] = np.array([0, 0, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF], np.uint8)
     return out.reshape(sh + (8,)).tobytes()
+
+
+def encode_font(img):
+    """폰트 장 전용: 원본 폰트처럼 칸마다 고정 팔레트(그림자 74·흰 255·가운데 164·투명)로 부호화 → 3단계 글자가 손실 없이 들어감.
+    (일반 encode 는 칸마다 끝점을 새로 잡아 글자 가장자리 몇 픽셀이 다른 색으로 바뀌었음, 10/4)"""
+    img = np.asarray(img, np.uint8)
+    B, H8, W8 = _blocks(img)
+    sh = B.shape[:3]
+    px = B.reshape(-1, 16, 4).astype(np.float32)
+    c0 = _to565(np.array([74, 72, 74], np.float32)); c1 = 0xFFFF            # c0 <= c1 → 3색+투명 모드
+    p0, p1 = _from565(np.array(c0)), _from565(np.array(c1))
+    pal = np.stack([p0, p1, (p0 + p1) / 2])
+    dist = ((px[..., None, :3] - pal[None, None]) ** 2).sum(-1)
+    idx = dist.argmin(-1)
+    idx = np.where(px[..., 3] < 128, 3, idx)
+    bits = np.zeros(len(px), np.uint64)
+    for k in range(16):
+        bits = bits << np.uint64(2) | idx[:, k].astype(np.uint64)
+    out = np.zeros((len(px), 8), np.uint8)
+    out[:, 0] = int(c0) >> 8; out[:, 1] = int(c0) & 255; out[:, 2] = 0xFF; out[:, 3] = 0xFF
+    for i in range(4):
+        out[:, 4 + i] = ((bits >> np.uint64(8 * (3 - i))) & np.uint64(255)).astype(np.uint8)
+    return out.reshape(sh + (8,)).tobytes()
