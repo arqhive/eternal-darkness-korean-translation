@@ -84,7 +84,7 @@ python tools/build_full.py      # 번역·폰트·폭 표·그림·DOL → build
 python tools/build_iso.py "Eternal Darkness - Manekareta 13-nin (Japan).iso" build/ED_KR.iso \
     --dol build/full/main.dol --repdir build/full --pack
 python tools/make_patcher.py --orig "Eternal Darkness - Manekareta 13-nin (Japan).iso" --build build/ED_KR.iso \
-    --out release/EternalDarkness-KO-v0.1 --version 0.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
+    --out release/GEDJ_KPatch_v0.1 --version 0.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
 ```
 
 - 이 게임의 데이터 파일은 산술부호 압축(SK_ASC)이라 다시 압축하는 도구가 없습니다. 그래서 DOL의 압축 해제 함수에 「표식이 없으면 그대로 복사」하는 우회를 넣고(`tools/patch_dol.py`), 바뀐 파일은 푼 상태로 넣습니다.

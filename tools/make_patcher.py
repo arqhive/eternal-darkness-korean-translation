@@ -8,7 +8,7 @@
 
 사용:
   python tools/make_patcher.py --orig "Eternal Darkness - Manekareta 13-nin (Japan).iso" --build build/ED_KR_v0.1.iso \\
-      --out release/EternalDarkness-KO-v0.1 --version 0.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
+      --out release/GEDJ_KPatch_v0.1 --version 0.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
 """
 import argparse
 import hashlib
