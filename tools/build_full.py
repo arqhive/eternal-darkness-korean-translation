@@ -293,6 +293,10 @@ def main():
         p = os.path.join(OUT, rel)
         os.makedirs(os.path.dirname(p), exist_ok=True)
         open(p, 'wb').write(v)
+    # 프롤로그 장면 책 표지: 일본어 로고 → 북미판 표지 그림(10/11, tools/cin_cover.py)
+    import cin_cover
+    cin_cover.build(os.path.join(OUT, 'Levels', 'Level16', 'cin0069'))
+    files['Levels/Level16/cin0069'] = None
     patch_dol.main(os.path.join(EX, 'main.dol'), os.path.join(OUT, 'main.dol'))
     json.dump({c: '%04X' % v for c, v in cs.map.items()}, open(os.path.join(OUT, '..', 'charmap.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     print('파일', len(files), '+ main.dol →', OUT)
