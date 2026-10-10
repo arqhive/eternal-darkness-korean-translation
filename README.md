@@ -3,9 +3,9 @@
 *Eternal Darkness: 招かれた13人* (게임큐브, 일본판 `GEDJ01`) 비공식 한국어 팬 패치입니다.
 대사는 북미판 영어 원문을 기준으로 번역하고, 높임과 칸 나눔은 일본판을 참고했습니다.
 
-**제작: arqhive** · **최신 버전: [v0.1](../../releases/tag/v0.1)**
+**제작: arqhive** · **최신 버전: [v0.2](../../releases/tag/v0.2)**
 
-- 컷신·실시간 자막, 방 조사 문구, 책(소지품·스펠·저널·부검) 화면, 메뉴·메모리 카드 문구를 한글화했습니다(3,333줄).
+- 컷신·실시간 자막, 방 조사 문구, 책(소지품·스펠·저널·부검) 화면, 메뉴·메모리 카드 문구를 한글화했습니다(3,376줄).
 - 그림 글씨 113장을 한글화했습니다(부검 그림 메모, 책 화면 버튼·탭, 타이틀·옵션 메뉴, 엔딩 화면, 포 인용 화면).
 - 타이틀 로고는 북미판 로고(Sanity's Requiem)로 바꿨습니다.
 - 게임 설정의 언어 「日本語」 자리가 「한국어」가 됩니다.
@@ -32,7 +32,7 @@
 
 ### 적용 방법
 
-1. [배포 페이지](../../releases/tag/v0.1)에서 `GEDJ_KPatch_v0.1.zip`을 받아 풉니다.
+1. [배포 페이지](../../releases/tag/v0.2)에서 `GEDJ_KPatch_v0.2.zip`을 받아 풉니다.
 2. 풀린 폴더에 원본 이미지를 넣고 `패치하기.bat`을 더블클릭합니다. 원본 파일을 `패치하기.bat` 위에 끌어다 놓아도 됩니다.
 3. 원본과 같은 폴더에 `Eternal Darkness (Korean).iso`가 생깁니다. 원본 파일은 그대로 남습니다.
 
@@ -84,7 +84,7 @@ python tools/build_full.py      # 번역·폰트·폭 표·그림·DOL → build
 python tools/build_iso.py "Eternal Darkness - Manekareta 13-nin (Japan).iso" build/ED_KR.iso \
     --dol build/full/main.dol --repdir build/full --pack
 python tools/make_patcher.py --orig "Eternal Darkness - Manekareta 13-nin (Japan).iso" --build build/ED_KR.iso \
-    --out release/GEDJ_KPatch_v0.1 --version 0.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
+    --out release/GEDJ_KPatch_v0.2 --version 0.2 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
 ```
 
 - 이 게임의 데이터 파일은 산술부호 압축(SK_ASC)이라 다시 압축하는 도구가 없습니다. 그래서 DOL의 압축 해제 함수에 「표식이 없으면 그대로 복사」하는 우회를 넣고(`tools/patch_dol.py`), 바뀐 파일은 푼 상태로 넣습니다.
