@@ -44,7 +44,7 @@ def _is_label(x):
 def parse_body(head, body, jp):
     """(라벨, 텍스트 원시 바이트)"""
     p = 0x18
-    if body[p:p + 2] != b'c\0':
+    if body[p:p + 2] not in (b'c\0', b'l\0', b'r\0'):   # c 보통·l 긴 글(편지·설명)·r 음량 화면(10/10: l·r 을 버려 44개 누락)
         return None, None
     p += 2
     label = ''
