@@ -1,12 +1,10 @@
 {
- "boot:INFO/BOOK_RELIC_DESC#2": "\\ay성유물의 책\\aw\n「그 진실과 거짓」\n\n13세기 후반까지 거슬러 올라가는 이 책은\n화려한 장식과 두꺼운 가죽 표지로\n장정되어 있다. 펼쳐진 쪽에는\n이렇게 쓰여 있었다.\n\n『일부 교단이 성유물을 날조해\n순례자들을 자기네 교구로 끌어들이고\n부정한 이득을 챙겨 왔다는 것은\n이제 의심할 여지가 없다.\n\"거짓이라도 희망을 주면 그만\"이라는 듯\n「커스버트의 턱뼈」, 「유다의 손」, 나아가\n「코노트의 넓적다리뼈로 만든 피리」 따위를\n지어내 신앙심 깊은 이들을 부당하게\n속여 왔다.』",
  "boot:INFO/MAX_LETTER1_INV": "첫 번째\n편지",
  "boot:INFO/MAX_LETTER1_PICKUP": "~p는(은) \\ay편지\\aw를 찾았다!",
  "boot:INFO/MAX_LETTER2_INV": "두 번째\n편지",
  "boot:INFO/MAX_LETTER2_PICKUP": "~p는(은) \\ay편지\\aw를 찾았다!",
  "boot:INFO/MAX_LETTER3_INV": "세 번째\n편지",
  "boot:INFO/MAX_LETTER3_PICKUP": "~p는(은) \\ay편지\\aw를 찾았다!",
- "boot:INFO/BOOK_RELIC_DESC#1": "\\ay성유물의 책\\aw\n「그 진실과 거짓」\n\n13세기 후반까지 거슬러 올라가는 이 책은\n화려한 장식과 두꺼운 가죽 표지로\n장정되어 있다. 펼쳐진 쪽에는\n이렇게 쓰여 있었다.\n\n『일부 교단이 성유물을 날조해\n순례자들을 자기네 교구로 끌어들이고\n부정한 이득을 챙겨 왔다는 것은\n이제 의심할 여지가 없다.\n\"거짓이라도 희망을 주면 그만\"이라는 듯\n「커스버트의 턱뼈」, 「유다의 손」, 나아가\n「코노트의 넓적다리뼈로 만든 피리」 따위를\n지어내 신앙심 깊은 이들을 부당하게\n속여 왔다.』",
  "boot:INFO/BOOK_RELIC_INV": "성유물의\n책",
  "boot:INFO/BOOK_RELIC_PICKUP": "~p는(은) \\ay\"성유물의 책\"\\aw을 찾았다!",
  "boot:INFO/DIARY1_INV": "일기장\n1쪽",
