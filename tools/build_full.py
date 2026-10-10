@@ -35,11 +35,15 @@ BASE = 0x120
 LIMIT = 0x6D8                       # 두 폭 표(1752·1763칸) 안
 BOOTS = ['JBootPak.bin', 'JBootPkW.bin', 'JBtPakES.bin', 'JBtPakJS.bin']
 FONTS = ['JFonts.tpl', 'JfontsEAD.tpl']
-GLYPH_FONT = os.path.join(ROOT, 'work', 'fonts', 'SCDream4.otf')   # 10/2 사용자 결정: 에스코어 드림 4, 힌팅 방식
-GLYPH_PX = 22
+GLYPH_FONT = os.path.join(ROOT, 'work', 'fonts', 'NotoSansKR-VF.ttf')   # 10/11 사용자 결정: 본고딕 400(이전 10/2 에스코어 드림 4 22px), 힌팅 방식
+GLYPH_WGHT = 400
+GLYPH_PX = 23   # 「한」 높이가 이전 글꼴 22px 과 같은 크기
 HANGUL_ADV = 23   # 한글 진행 폭(글자 그림 17~21px). 10/4 사용자 결정 26→23(자간 줄임)
-GLYPH_DY = -1   # 가나 칸 위치(2~24px)에 맞춤. 10/2 실기 제보(메모리 카드 상자 겹침) 뒤 글꼴별로 맞춰 정함
+GLYPH_DY = -2   # 본고딕 23px 은 -2 에서 잉크 2~23px(10/11). 이전: 가나 칸 위치(2~24px)에 맞춤. 10/2 실기 제보(메모리 카드 상자 겹침) 뒤 글꼴별로 맞춰 정함
 SYM_SRC = {'…': 0x109, '「': 0x10C, '」': 0x10D, '『': 0x10E, '』': 0x10F, '・': 0x103, '·': 0x103, '　': 0x100}
+PUNCT_PAD = 2   # 10/11 본고딕 한글이 칸 끝(23px)까지 차서 뒤 부호가 붙음 → 닫는 부호 그림을 오른쪽으로 2px, 폭 +2
+PUNCT_ASCII = '.,!:;)~'
+PUNCT_SYM = '…」』'
 
 
 def disk(rel):
@@ -145,6 +149,8 @@ def glyph(ch):
     """28x28 흰 글자 + 오른쪽 아래 어두운 그림자(원본 폰트 3단계 색: 흰 255·회색 164·그림자 74)."""
     from PIL import ImageDraw, ImageFont
     f = ImageFont.truetype(GLYPH_FONT, GLYPH_PX)   # 실제 크기에서 바로 그림(힌팅이 픽셀 격자에 맞춤)
+    if GLYPH_WGHT:
+        f.set_variation_by_axes([GLYPH_WGHT])
     m = Image.new('L', (CELL, CELL), 0)
     ImageDraw.Draw(m).text((CELL // 2, CELL // 2 + 1 + GLYPH_DY), ch, font=f, fill=255, anchor='mm')
     sh = Image.new('L', (CELL, CELL), 0); sh.paste(m, (1, 1))
@@ -161,6 +167,12 @@ def glyph(ch):
                 op[x, y] = (74, 72, 74, 255)
     return out
 
+
+
+def pad_right(g):
+    out = Image.new('RGBA', g.size, (0, 0, 0, 0))
+    out.paste(g.crop((0, 0, g.width - PUNCT_PAD, g.height)), (PUNCT_PAD, 0))
+    return out
 
 
 def build_fonts(cs, files):
@@ -189,10 +201,20 @@ def build_fonts(cs, files):
             x0 = (c % 16) * CELL; y0 = h - (c // 16 + 1) * CELL
             if ch in SYM_SRC:
                 g = cell_img(jf, jimgs, SYM_SRC[ch])            # 저장 좌표 그대로
+                if ch in PUNCT_SYM:
+                    g = pad_right(g)
             else:
                 g = glyph(ch).transpose(Image.FLIP_TOP_BOTTOM)
             img.paste(Image.new('RGBA', (CELL, CELL), (0, 0, 0, 0)), (x0, y0))
             img.paste(g, (x0, y0))
+        if 0 not in sheets:   # 0번 장(ASCII) 닫는 부호 띄우기
+            i, w, h, fmt, doff = imgs[0]
+            sheets[0] = tpl.decode(bytes(d), doff, w, h, fmt).convert('RGBA')
+        img = sheets[0]; h = img.height
+        for ch in PUNCT_ASCII:
+            c = ord(ch); x0 = (c % 16) * CELL; y0 = h - (c // 16 + 1) * CELL
+            g = pad_right(img.crop((x0, y0, x0 + CELL, y0 + CELL)))
+            img.paste(Image.new('RGBA', (CELL, CELL), (0, 0, 0, 0)), (x0, y0)); img.paste(g, (x0, y0))
         for sh, img in sheets.items():
             i, w, h, fmt, doff = imgs[sh]
             assert fmt == 14
@@ -210,6 +232,10 @@ def widths(cs):
     W = {}
     for ch, code in cs.map.items():
         W[code] = blk[5 + SYM_SRC[ch]] if ch in SYM_SRC else HANGUL_ADV
+        if ch in PUNCT_SYM:
+            W[code] += PUNCT_PAD
+    for ch in PUNCT_ASCII:
+        W[ord(ch)] = blk[5 + ord(ch)] + PUNCT_PAD
     return W
 
 

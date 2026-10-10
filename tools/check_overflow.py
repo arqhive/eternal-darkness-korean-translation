@@ -15,6 +15,7 @@ import measure
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 HANGUL_W = 23   # build_full.HANGUL_ADV 와 같게(10/4 26→23)
+PUNCT_PAD, PUNCT_ASCII = 2, '.,!:;)~'   # build_full 과 같게(10/11 닫는 부호 2px 띄움)
 VAR_W = 26 * 6   # 변수 자리(이름 등) 예상 폭: 한글 6자 기준(임시)
 
 # 창 종류별 한계: (한 줄 최대 px, 최대 줄 수). docs/windows.md 참고(2026-10-01).
@@ -67,7 +68,7 @@ def line_px(line):
         if '가' <= c <= '힣':
             w = HANGUL_W
         elif ord(c) < 0x80:
-            w = wt()[ord(c)]
+            w = wt()[ord(c)] + (PUNCT_PAD if c in PUNCT_ASCII else 0)
         else:
             w = 28  # 전각 부호 등(일본판 칸 폭 27~28)
         px += w * scale; i += 1
