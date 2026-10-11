@@ -27,3 +27,5 @@ work/gfx/*
 !work/gfx/autopsy_boxes.json
 !work/gfx/autopsy_ko.json
 !work/glyph_fix.tsv
+# 영상 인코더 실행 파일(libtheora 소스로 직접 빌드, tools/fmv_logo.py 설명 참고)
+tools/fmv/*.exe
