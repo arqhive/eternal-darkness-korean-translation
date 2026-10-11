@@ -65,7 +65,7 @@
 | Non Aligned | 무속성 | なし | |
 | Spell | 주문 | スペル | |
 | Spell Scroll | 주문 두루마리 | スペル・スクロール | |
-| Quick Spell | 빠른 주문 | クイック・スペル | |
+| Quick Spell / Spell List / New Spell | 퀵 스펠 / 스펠 목록 / 스펠 작성 | クイック・スペル / スペル・リスト / スペルを作る | 10/12 GPT 그림에 맞춤(이전 빠른 주문·주문 목록·만들기). 일반 문장의 「주문」은 그대로 |
 | Cast | 시전 | 使う | |
 | Magick Pool | 매직 풀 | マジック・プール | |
 
@@ -132,9 +132,9 @@
 | Health / Magick / Sanity | 체력 / 마력 / 정신력 | | 게이지 이름 |
 | Sanity's Requiem | 정신의 진혼곡 | | 북미판 부제(그림 교체 2장에 영어로 남음) |
 | Inventory | 소지품 | 持ち物 | |
-| Use / Equip / Mix / Check / Mode / Assign | 사용 / 장비 / 조합 / 확인 / 모드 / 지정 | 使う / 装備 / 合わせる / チェック / モード / 登録 | |
-| Map / Magick / Journal / Options | 맵 / 스펠 / 저널 / 옵션 | マップ / スペル / ジャーナル / オプション | 10/1 책 탭 이름은 일본어 음차(사용자 결정). 탭 이름에만 적용, 일반 낱말 마법·지도·기록·설정은 그대로 |
-| Autopsy / Gathered Autopsies | 부검 / 부검 기록 | 解剖書 / 解剖図 | 10/1 「부검」으로 통일(본문·그림) |
+| Use / Equip / Mix / Check / Mode / Assign | 사용 / 장비 / 조합하다 / 체크 / 모드 / 등록 | 使う / 装備 / 合わせる / チェック / モード / 登録 | 10/12 GPT 그림에 맞춤(버튼·제목). 문장 속 「조합할 수 없다」 등 동사는 그대로 |
+| Map / Magick / Journal / Options | 지도 / 스펠 / 일지 / 옵션 | マップ / スペル / ジャーナル / オプション | 10/12 GPT 그림에 맞춰 지도·일지(10/1 음차 맵·저널에서 바꿈). 스펠·옵션 탭은 그대로 |
+| Autopsy / Gathered Autopsies | 해부서 / 해부도 (동작은 해부한다) | 解剖書 / 解剖図 | 10/12 GPT 그림에 맞춤(10/1 부검에서 바꿈) |
 | Cinema / Cinematics | 영상 | ムービー(그림 글자) | |
 | Memory Card / Slot A·B | 메모리 카드 / 슬롯 A·B | メモリーカード / スロットA | |
 | Saved Game / Game File | 저장 데이터 / 게임 파일 | | |

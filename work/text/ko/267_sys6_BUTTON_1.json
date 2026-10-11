@@ -42,7 +42,7 @@
  "boot:BUTTON/HIDE": "\\i21\\s0.3\\n\n\\s0.9숨는다",
  "boot:BUTTON/TURN_SPIGOT": "\\i21\\s0.3\\n\n\\s0.9꼭지를 돌린다",
  "boot:BUTTON/PUSH": "\\i21\\s0.3\\n\n\\s0.9민다",
- "boot:BUTTON/ATTEMPT_AUTOPSY": "\\i21\\s0.3\\n\n\\s0.9부검한다",
+ "boot:BUTTON/ATTEMPT_AUTOPSY": "\\i21\\s0.3\\n\n\\s0.9해부한다",
  "boot:BUTTON/MEDITATE": "\\i21\\s0.3\\n\n\\s0.9명상한다",
  "boot:BUTTON/RATIONALISE": "\\i21\\s0.3\\n\n\\s0.9마음을 다잡는다",
  "boot:BUTTON/WIND_CLOCK": "\\i21\\s0.3\\n\n\\s0.9태엽을 감는다",

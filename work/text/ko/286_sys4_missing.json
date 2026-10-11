@@ -29,7 +29,7 @@
  "boot:BOOK_TUTORIAL/USE": "\\ay사용\\aw\n소지품을 지금 있는 방에서 쓸 수 있다.",
  "boot:BOOK_TUTORIAL/EQUIP": "\\ay장비\\aw\n지금 캐릭터가 무기를 갖출 수 있다.",
  "boot:BOOK_TUTORIAL/CHECK": "\\ay체크\\aw\n소지품을 자세히 살펴볼 수 있다.",
- "boot:BOOK_TUTORIAL/MIX": "\\ay조합\\aw\n소지품 두 개 이상을 하나로 합칠 수 있다.",
+ "boot:BOOK_TUTORIAL/MIX": "\\ay조합하다\\aw\n소지품 두 개 이상을 하나로 합칠 수 있다.",
  "boot:BOOK_TUTORIAL/MODE": "\\ay모드\\aw\n총의 사격 방식을 바꿀 수 있다.",
  "boot:BOOK_TUTORIAL/HEALTH": "\\ar체력 게이지\\aw\n\\ar생명력\\aw을 나타낸다. 캐릭터가 \\ar피해\\aw를 입을 때마다\n줄어들고, 0이 되면 캐릭터는 죽는다.",
  "boot:BOOK_TUTORIAL/MAGICK": "\\ab마력 게이지\\aw\n캐릭터의 \\ab마력\\aw을 나타낸다. 주문을 외면 줄어들고,\n캐릭터가 움직이는 동안 다시 차오른다.",
@@ -38,10 +38,10 @@
  "boot:MAGIC_TUTORIAL/RUNES": "\\ay룬\\ab은 \\ay주문\\ab을 만드는 핵심 요소다. \\ay룬\\ab을 모아 여러\n방식으로 조합하면 다양한 \\ay주문\\ab을 만들 수 있다.\\aw",
  "boot:MAGIC_TUTORIAL/CODEX": "\\ay코덱스\\aw\n\\ab룬은 \\ay코덱스\\ab 없이는 알 수 없다. \\ay코덱스\\ab가 없으면\n가진 룬의 뜻은 수수께끼로 남는다.\\aw",
  "boot:MAGIC_TUTORIAL/CAST": "\\ay사용\\aw\n\\ab찾아내거나 연구해 얻은 주문을 쓸 수 있다.",
- "boot:MAGIC_TUTORIAL/ASSIGN": "\\ay지정\\aw\n\\ab자주 쓰는 주문을 버튼에 지정할 수 있다. 그러면\n매번 책에서 고르지 않고도 주문을 쓸 수 있다.\\aw",
+ "boot:MAGIC_TUTORIAL/ASSIGN": "\\ay등록\\aw\n\\ab자주 쓰는 주문을 버튼에 등록할 수 있다. 그러면\n매번 책에서 고르지 않고도 주문을 쓸 수 있다.\\aw",
  "boot:MAGIC_TUTORIAL/CHECK": "\\ay체크\\aw\n\\ab손에 넣은 주문 두루마리의 내용을 하나하나\n살펴볼 수 있다.\\aw",
- "boot:MAGIC_TUTORIAL/SPELL_LIST": "\\ay주문 목록\\aw\n\\ab손에 넣은 주문 정보를 모두 모은 목록. 여기서 쓸\n주문을 고르거나, 살펴보거나, 편리한 \\ay빠른 주문\\ab\n버튼에 지정할 수 있다.\\aw",
- "boot:MAGIC_TUTORIAL/NEW_SPELL": "\\ay만들기\\aw\n\\ab룬을 이리저리 조합해 보며 새 주문을 찾아낼 수\n있다.\\aw",
+ "boot:MAGIC_TUTORIAL/SPELL_LIST": "\\ay스펠 목록\\aw\n\\ab손에 넣은 주문 정보를 모두 모은 목록. 여기서 쓸\n주문을 고르거나, 살펴보거나, 편리한 \\ay퀵 스펠\\ab\n버튼에 등록할 수 있다.\\aw",
+ "boot:MAGIC_TUTORIAL/NEW_SPELL": "\\ay스펠 작성\\aw\n\\ab룬을 이리저리 조합해 보며 새 주문을 찾아낼 수\n있다.\\aw",
  "boot:MAGIC_TUTORIAL/RUNE_PAGE": "\\ay룬\\aw\n\\ab손에 넣은 마법 주문의 구성 요소를 모두 모은\n목록이다.",
- "boot:MAGIC_TUTORIAL/QUICKSPELL": "\\ay빠른 주문\\ab\n지금 빠른 주문 버튼에 지정한 주문을 확인할 수\n있다."
+ "boot:MAGIC_TUTORIAL/QUICKSPELL": "\\ay퀵 스펠\\ab\n지금 퀵 스펠 버튼에 등록한 주문을 확인할 수\n있다."
 }
