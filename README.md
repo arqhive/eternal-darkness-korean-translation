@@ -3,11 +3,12 @@
 *Eternal Darkness: 招かれた13人* (게임큐브, 일본판 `GEDJ01`) 비공식 한국어 팬 패치입니다.
 대사는 북미판 영어 원문을 기준으로 번역하고, 높임과 칸 나눔은 일본판을 참고했습니다.
 
-**제작: arqhive** · **최신 버전: [v0.3](../../releases/tag/v0.3)**
+**제작: arqhive** · **최신 버전: [v0.3.1](../../releases/tag/v0.3.1)**
 
 - 컷신·실시간 자막, 방 조사 문구, 책(소지품·스펠·저널·부검) 화면, 메뉴·메모리 카드 문구를 한글화했습니다(3,376줄).
 - 그림 글씨 113장을 한글화했습니다(부검 그림 메모, 책 화면 버튼·탭, 타이틀·옵션 메뉴, 엔딩 화면, 포 인용 화면).
 - 타이틀 로고와 프롤로그 책 표지 로고는 한글 로고(「이터널 다크니스 ─초대받은 13인─」)로 그렸습니다. 후속작 예고(Coming Soon) 화면만 영어판 그림을 씁니다.
+- 오프닝 영상 끝 로고 아래 부제도 한글(「이터널 다크니스 ─ 초대받은 13인 ─」)로 바꿨습니다.
 - 게임 설정의 언어 「日本語」 자리가 「한국어」가 됩니다.
 - **원본과 같은 1.4GB 디스크 크기를 유지합니다.**
 
@@ -32,7 +33,7 @@
 
 ### 적용 방법
 
-1. [배포 페이지](../../releases/tag/v0.3)에서 `GEDJ_KPatch_v0.3.zip`을 받아 풉니다.
+1. [배포 페이지](../../releases/tag/v0.3.1)에서 `GEDJ_KPatch_v0.3.1.zip`을 받아 풉니다.
 2. 풀린 폴더에 원본 이미지를 넣고 `패치하기.bat`을 더블클릭합니다. 원본 파일을 `패치하기.bat` 위에 끌어다 놓아도 됩니다.
 3. 원본과 같은 폴더에 `Eternal Darkness (Korean).iso`가 생깁니다. 원본 파일은 그대로 남습니다.
 
@@ -61,7 +62,6 @@ Redump 정본 ISO의 값입니다. 다른 덤프도 게임 파일이 같으면 �
 
 ### 알려진 문제
 
-- 오프닝 영상의 타이틀 부제(일본어)는 영상 안에 그려져 있어 그대로 두었습니다.
 - 숫자만 있는 그림(16:9, 4:3)과 일본판에서도 영어였던 디자인 글자(Press A to Continue 등)는 그대로 두었습니다.
 
 ## 개발자용: 직접 빌드
@@ -71,6 +71,7 @@ Redump 정본 ISO의 값입니다. 다른 덤프도 게임 파일이 같으면 �
 - Python 3.11 이상과 numpy, Pillow, opencv-python, unicorn(압축 해제 에뮬레이션).
 - 일본판 ISO(`Eternal Darkness - Manekareta 13-nin (Japan).iso`)를 저장소 루트에. 그림 영어판 대조용으로 북미판 ISO도 씁니다.
 - 한글 자막 글꼴 본고딕(Noto Sans KR) 가변 글꼴(`work/fonts/NotoSansKR-VF.ttf`, 굵기 400). 그림 글씨를 다시 만들 때는 연천 허목체 등 아래 「글꼴」의 글꼴과 LaMa 인페인팅(PyTorch, big-lama)이 필요합니다.
+- 오프닝 영상 인코더 `tools/fmv/venc.exe`: Xiph libtheora 1.1.1·libogg 1.3.5 소스로 직접 빌드합니다(방법은 `tools/fmv_logo.py` 설명). 영상 해독에 `imageio-ffmpeg`를 씁니다.
 - 배포용 패처를 만들 때만: xdelta3 3.1.0과 wit v3.05a(cygwin64판). 릴리즈 ZIP의 `bin/`에 든 것을 그대로 써도 됩니다.
 
 ### 빌드
@@ -84,7 +85,7 @@ python tools/build_full.py      # 번역·폰트·폭 표·그림·DOL → build
 python tools/build_iso.py "Eternal Darkness - Manekareta 13-nin (Japan).iso" build/ED_KR.iso \
     --dol build/full/main.dol --repdir build/full --pack
 python tools/make_patcher.py --orig "Eternal Darkness - Manekareta 13-nin (Japan).iso" --build build/ED_KR.iso \
-    --out release/GEDJ_KPatch_v0.3 --version 0.3 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
+    --out release/GEDJ_KPatch_v0.3.1 --version 0.3.1 --wit <wit 폴더> --xdelta <xdelta3.exe> --readme patcher/README.txt
 ```
 
 - 이 게임의 데이터 파일은 산술부호 압축(SK_ASC)이라 다시 압축하는 도구가 없습니다. 그래서 DOL의 압축 해제 함수에 「표식이 없으면 그대로 복사」하는 우회를 넣고(`tools/patch_dol.py`), 바뀐 파일은 푼 상태로 넣습니다.
