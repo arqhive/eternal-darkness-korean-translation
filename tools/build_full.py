@@ -323,7 +323,10 @@ def main():
     import cin_cover
     cin_cover.build(os.path.join(OUT, 'Levels', 'Level16', 'cin0069'))
     files['Levels/Level16/cin0069'] = None
-    patch_dol.main(os.path.join(EX, 'main.dol'), os.path.join(OUT, 'main.dol'))
+    # 10/12: DOL 안에 든 그림(포 인용문 640x480, 켤 때 디스크 읽기 전에 뜸)을 build_gfx 가 바꿨으면 그 DOL 에 우회 패치를 얹는다.
+    # (전에는 원본 DOL 에서 다시 만들어 그림 교체가 사라졌음 → 처음 몇 초 영어 인용문)
+    dol_src = os.path.join(OUT, 'main.dol') if 'main.dol' in files else os.path.join(EX, 'main.dol')
+    patch_dol.main(dol_src, os.path.join(OUT, 'main.dol'))
     json.dump({c: '%04X' % v for c, v in cs.map.items()}, open(os.path.join(OUT, '..', 'charmap.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     print('파일', len(files), '+ main.dol →', OUT)
 
