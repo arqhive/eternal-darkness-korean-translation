@@ -41,7 +41,7 @@
  "boot:CHAPTERPAGE/BLANKTWOTHIRD_DESC": "글이 적힌 더 큰 페이지의 3분의 2인 것\n같다. 아무것도 쓰여 있지 않다.",
  "boot:CHAPTERPAGE/BLANKTWOTHIRD_INV": "큰\n종이\n조각",
  "boot:CHAPTERPAGE/BLANKTWOTHIRD_PICKUP": "~p는(은) \\ay큰 종이 조각\\aw을\n만들었다!",
- "boot:CHAPTERPAGE/BLANKPAGE_DESC": "책의 한 페이지가 온전히 맞춰진 것 같다.\n그런데 \\ay아무것도 쓰여 있지 않다\\aw.",
+ "boot:CHAPTERPAGE/BLANKPAGE_DESC": "온전한 책 한 페이지인 것 같다.\n그런데 \\ay아무것도 쓰여 있지 않다\\aw.",
  "boot:CHAPTERPAGE/BLANKPAGE_INV": "빈\n페이지",
  "boot:CHAPTERPAGE/BLANKPAGE_PICKUP": "~p는(은) \\ay빈 페이지\\aw를 만들었다!",
  "boot:CHAPTERPAGE/SPICEJAR_USE": "\\ay챕터 페이지\\aw를 꺼냈으니 이제\n\\ay향신료 병\\aw은 필요 없다. 알렉스는\n병을 버렸다.",

@@ -29,7 +29,7 @@
  "boot:URN_PUZZLE/GRN_SHARD_FIX_DESC": "\\ag깨진 단지\\aw의 \\ay세 조각\\aw을 서둘러 맞춰 놓았다.",
  "boot:URN_PUZZLE/GRN_SHARD_FIX_INV": "깨진\n초록 단지",
  "boot:URN_PUZZLE/GRN_SHARD_FIX_PICKUP": "~p는(은) \\ax깨진 초록 단지\\aw를\n맞춰 놓았다!",
- "boot:URN_PUZZLE/GRN_URN_FIX_DESC": "\\ag깨진 초록 단지\\aw\n깨진 조각들을 맞춰 대충 모양은 갖췄다.\n깊은 금이 가 있어, 거의 다 맞췄는데도\n\\ay물이 새지 않게\\aw 하기에는 한참 멀다.\n어떻게든 고칠 방법이 있을 것이다.",
+ "boot:URN_PUZZLE/GRN_URN_FIX_DESC": "\\ag깨진 초록 단지\\aw\n깨진 조각들을 맞춰 대충 모양은 갖췄다.\n깊은 금이 가 있어, 거의 다 맞췄는데도\n\\ay물이 새지 않게\\aw 하기에는 한참 멀다.\n어떻게든 고칠 수 있을지도 모른다.",
  "boot:URN_PUZZLE/GRN_URN_FIX_INV": "깨진\n초록 단지",
  "boot:URN_PUZZLE/GRN_URN_FIX_PICKUP": "~p는(은) \\ax깨진 초록 단지\\aw의\n조각을 모두 맞췄다.",
  "boot:URN_PUZZLE/GRN_URN_TWOTHIRD_DESC": "\\ag깨진 초록 단지\\aw의 조각 \\ay셋 중 둘\\aw을\n맞춰 놓은 것 같다.",

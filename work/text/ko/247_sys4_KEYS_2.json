@@ -2,7 +2,7 @@
  "boot:KEYS/TOWERKEY_DESC": "\\ay옛 탑 열쇠\n옛 탑\\aw으로 가는 문의 \\ay열쇠\\aw.\n크고 녹슬어 있다.",
  "boot:KEYS/TOWERKEY_INV": "옛 탑\n열쇠",
  "boot:KEYS/TOWERKEY_PICKUP": "~p는(은) \\ay옛 탑 열쇠\\aw를 얻었다!",
- "boot:KEYS/CHAMBKEY_DESC": "\\ay제물용 칼\\aw\n사람을 \\ay제물\\aw로 바칠 때 쓰던 화려한 의식용\n\\ay칼\\aw. 폴은 손에 드는 것조차 꺼림칙하다.\n희생된 이들의 원혼이 칼날에 깃든 듯\n불길한 기운이 짙게 감돈다.",
+ "boot:KEYS/CHAMBKEY_DESC": "\\ay제물용 칼\\aw\n사람을 \\ay제물\\aw로 바칠 때 쓰던 화려하고 긴\n\\ay칼\\aw. 폴은 손에 드는 것조차 꺼림칙하다.\n뿜어내는 사악한 기운이 강렬하고 섬뜩하다.\n이 칼이 앗아 간 영혼들이 칼날 속에 살아 있다.",
  "boot:KEYS/CHAMBKEY_INV": "제물용\n칼",
  "boot:KEYS/CHAMBKEY_PICKUP": "~p는(은) \\ay제물용 칼\\aw을 받았다!",
  "boot:KEYS/BASEKEY_TOP_DESC": "\\ay지하실 열쇠\\aw\n\\ay지하실 열쇠\\aw의 \\ay윗부분\\aw.\n아랫부분이 없어진 것 같다.",
@@ -50,11 +50,11 @@
  "boot:KEYS/UPSTAIRS_FRAGILE_DESC": "\\ay2층 열쇠\\aw\n로이바스 저택 \\ay2층\\aw으로 통하는 문의 \\ay열쇠\\aw.\n아주 낡고 닳아 있다.",
  "boot:KEYS/UPSTAIRS_FRAGILE_INV": "2층\n열쇠",
  "boot:KEYS/UPSTAIRS_FRAGILE_PICKUP": "~p는(은) \\ay2층 열쇠\\aw를 찾았다!",
- "boot:KEYS/UPSTAIRS_BROKEN_DESC": "\\ay부서진 2층 열쇠\\aw\n로이바스 저택 \\ay2층\\aw으로 통하는 \\ay열쇠\\aw.\n부서져 있어 고치지 않으면 쓸 수 없다.",
+ "boot:KEYS/UPSTAIRS_BROKEN_DESC": "\\ay부서진 2층 열쇠\\aw\n로이바스 저택 \\ay2층\\aw으로 통하는 \\ay열쇠\\aw.\n부서져 있는 것 같다.",
  "boot:KEYS/UPSTAIRS_BROKEN_INV": "부서진\n2층 열쇠",
  "boot:KEYS/UPSTAIRS_BROKEN_PICKUP": "~p는(은) \\ay부서진 2층 열쇠\\aw를\n주웠다!",
  "boot:KEYS/ENVELOPE_BEFORE": "\\ay봉투\\aw\n녹인 밀랍으로 봉한 \\ay종이 봉투\\aw.\n밀랍에 기묘한 \\ay룬\\aw이 찍혀 있다.\n안에 무언가 묵직한 것이 들어 있는 것 같다.\n\n봉투를 열겠습니까?\n\n아니요　\\i21　　예　\\i20",
- "boot:KEYS/DOORHANDLE_DESC": "\\ay문손잡이\\aw\n어느 문의 것인지 모를 오래된 \\ay문손잡이\\aw.\n보이는 문 어디에도 맞지 않는 것 같다.",
+ "boot:KEYS/DOORHANDLE_DESC": "\\ay문손잡이\\aw\n어느 문의 것인지 모를 \\ay문손잡이\\aw.\n보이는 문 어디에도 맞지 않는 것 같다.",
  "boot:KEYS/DOORHANDLE_INV": "문손잡이",
  "boot:KEYS/DOORHANDLE_PICKUP": "~p는(은) \\ay문손잡이\\aw를 찾았다!"
 }

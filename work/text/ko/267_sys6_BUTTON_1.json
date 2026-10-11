@@ -38,7 +38,7 @@
  "boot:BUTTON/ANSWER_PHONE": "\\i21\\s0.3\\n\n\\s0.9전화를 받는다",
  "boot:BUTTON/ADJUST_CLOCK": "\\i21\\s0.3\\n\n\\s0.9시계를\n맞춘다",
  "boot:BUTTON/SEARCH": "\\i21\\s0.3\\n\n\\s0.9찾는다",
- "boot:BUTTON/ENGAGE_ARRAY": "\\i21\\s0.3\\n\n\\s0.9돌에\n손을 댄다",
+ "boot:BUTTON/ENGAGE_ARRAY": "\\i21\\s0.3\\n\n\\s0.9장치를\n작동한다",
  "boot:BUTTON/HIDE": "\\i21\\s0.3\\n\n\\s0.9숨는다",
  "boot:BUTTON/TURN_SPIGOT": "\\i21\\s0.3\\n\n\\s0.9꼭지를 돌린다",
  "boot:BUTTON/PUSH": "\\i21\\s0.3\\n\n\\s0.9민다",
