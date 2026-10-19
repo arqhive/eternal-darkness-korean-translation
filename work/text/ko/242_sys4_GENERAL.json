@@ -6,7 +6,7 @@
  "boot:GENERAL/DEMONKHMER_INV": "삼류\n소설",
  "boot:GENERAL/DEMONKHMER_PICKUP": "~p는(은) \\ay삼류 소설\\aw을 찾았다!",
  "boot:GENERAL/PARCEL_DESC": "\\ay소포\\aw\n수수한 \\ay갈색 종이\\aw로 싼 소포.\n받는 사람이 적혀 있지 않고, 누군가\n급히 싼 것 같다.",
- "boot:GENERAL/PARCEL_INV": "갈색\n종이\n소포",
+ "boot:GENERAL/PARCEL_INV": "갈색\n종이 소포",
  "boot:GENERAL/PARCEL_PICKUP": "~p는(은) \\ay갈색 종이 소포\\aw를\n손에 넣었다!",
  "boot:GENERAL/MESSTUBE_DESC": "\\ay전갈 통\\aw\n봉인한 전갈 두루마리를 나를 때 쓰던,\n가죽으로 싼 오래된 통. 아직 열지 않은\n것 같다.",
  "boot:GENERAL/MESSTUBE_INV": "전갈\n통",

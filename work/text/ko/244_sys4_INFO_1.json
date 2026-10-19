@@ -56,5 +56,5 @@
  "boot:INFO/MAXLAST_LETTER_INV": "M. 로이바스\n일지 4쪽",
  "boot:INFO/MAXLAST_LETTER_PICKUP": "~p는(은)\n\\ayM. 로이바스 일지의 한 장\\aw을\n손에 넣었다!",
  "boot:INFO/SOL_ENV_DESC": "\\ay봉인된 봉투\\aw\n봉인된 봉투. 꽤 공식적인 것 같다.",
- "boot:INFO/SOL_ENV_INV": "봉인된\n봉투"
+ "boot:INFO/SOL_ENV_INV": "봉인된 봉투"
 }

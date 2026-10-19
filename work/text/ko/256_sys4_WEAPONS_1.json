@@ -14,7 +14,7 @@
  "boot:WEAPONS/GLADIUS_INV": "글라디우스",
  "boot:WEAPONS/GLADIUS_DESC": "\\ay글라디우스\\aw\n로마군의 표준 무기. 끝이 날카로운\n삼각형인 짧은 양날 검이다. 주로\n적을 베고 내리찍는 데 쓰지만\n갑옷을 꿰뚫는 데도 쓸 수 있었다.",
  "boot:WEAPONS/GLADIUS_PICKUP": "~p는(은) \\ay글라디우스\\aw를\n손에 넣었다!",
- "boot:WEAPONS/TALIBON_INV": "쇼트\n소드",
+ "boot:WEAPONS/TALIBON_INV": "쇼트 소드",
  "boot:WEAPONS/TALIBON_DESC": "\\ay쇼트 소드\\aw\n나무 손잡이가 달려 가볍고 튼튼하다.\n손잡이부터 살짝 휘어 있어 찌르기보다\n베기에 알맞다.",
  "boot:WEAPONS/TALIBON_PICKUP": "~p는(은) \\ay쇼트 소드\\aw를\n손에 넣었다!",
  "boot:WEAPONS/SCRAMASAZ_INV": "스크라마색스",

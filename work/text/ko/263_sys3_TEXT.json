@@ -33,5 +33,5 @@
  "boot:TEXT/magick_pool": "매직 풀",
  "boot:TEXT/bind": "바인드",
  "boot:TEXT/choose_your_fate": "운명을 고르십시오.",
- "boot:TEXT/eternal_mode_on": "이터널 모드로\n플레이하겠습니까?"
+ "boot:TEXT/eternal_mode_on": "이터널 모드로\n플레이하시겠습니까?"
 }

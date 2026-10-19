@@ -15,11 +15,11 @@
  "boot:GENERIC_TEXT/TX_SPELL_CAST_CANNOT_CAST_WITHOUT_T": "~p는(은) \\am영원한 어둠의 서\\aw 없이는\n주문을 쓸 수 없다!",
  "boot:GENERIC_TEXT/ENCHANTED_ITEM": "이 \\ay아이템\\aw에 마법이 깃들었다!",
  "boot:GENERIC_TEXT/REPAIRED_ITEM": "이 \\ay아이템\\aw을 고쳤다!",
- "boot:GENERIC_TEXT/DELETE_SAVED_GAME": "저장 데이터를 지우겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:GENERIC_TEXT/DELETE_SAVED_GAME": "저장 데이터를 지우시겠습니까?\n\n아니요　\\i21　　예　\\i20",
  "boot:GENERIC_TEXT/SUCCESSFUL_DELETE_GAME": "\\ay저장 데이터\\aw를 모두 \\ay삭제\\aw했습니다.",
  "boot:GENERIC_TEXT/NO_ITEMS_IN_INV": "~p는(은)\n\\ay아이템\\aw을\n가지고 있지 않다.",
  "boot:GENERIC_TEXT/NO_SPELL_IN_TRAPPERDIM": "\\ay트래퍼 차원\\aw에서는\n주문을 쓸 수 없다!",
- "boot:GENERIC_TEXT/PROGRESSIVE_MODE": "프로그레시브 모드로 표시하겠습니까?",
+ "boot:GENERIC_TEXT/PROGRESSIVE_MODE": "프로그레시브 모드로 표시하시겠습니까?",
  "boot:GENERIC_TEXT/YES": "예",
  "boot:GENERIC_TEXT/NO": "아니요",
  "boot:GENERIC_TEXT/SCREEN_PROGRESSIVE": "화면 표시 모드가\n프로그레시브 모드로 설정되었습니다.",
@@ -40,6 +40,6 @@
  "boot:GENERIC_TEXT/DO_NOT_NEED_COURAGE": "~p는(은) 지금 이걸 쓸 필요를\n느끼지 못한다.",
  "boot:GENERIC_TEXT/NO_MANT_SUMMON": "\\am만토록\\aw 룬은 \\ay소환\\aw 마법에 쓸 수 없다.\n\\am만토록\\aw이 봉인되어 힘이 약해진 탓에\n더는 이런 주문에 힘을 보태지 못한다.",
  "boot:GENERIC_TEXT/NOT_ENOUGH_COMPONENTS": "지금은 주문을 연구할 만큼\n\\ay룬\\aw이 모이지 않았다.",
- "boot:GENERIC_TEXT/WOULD_YOU_LIKE_TO_SAVE_NOW": "앞으로 나아가기 전에\n지금까지의 진행을 저장하겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:GENERIC_TEXT/WOULD_YOU_LIKE_TO_SAVE_NOW": "앞으로 나아가기 전에\n지금까지의 진행을 저장하시겠습니까?\n\n아니요　\\i21　　예　\\i20",
  "boot:GENERIC_TEXT/PIOUS_DEATH": "피우스는 황제의 명을 받들다 쓰러졌다.\n성스러운 유물은 사막의 모래 아래\n숨겨진 채 기다리고 있다…"
 }
