@@ -93,15 +93,30 @@ def pak_parse(d):
     return n, [struct.unpack('>II', d[8 + 8 * i:16 + 8 * i]) for i in range(n)]
 
 
+# 10/20: 방 조사 창은 게임이 글자 단위로 자동 줄바꿈해서 낱말이 잘림(「알렉스/는」). 띄어쓰기 자리에서 미리 줄을 바꿔 넣는다.
+# 한계는 사용자 캡처로 잼: 618px 줄은 들어가고 628px 에서 꺾임 → 여유 두고 615px.
+ROOM_WRAP = 615
+
+
+def keep_all(t, maxw=ROOM_WRAP):
+    import check_overflow as C
+    out = []
+    for para in t.split('\n'):
+        lines = C.wrap(para, maxw)
+        out += [l.rstrip(' ') for l in lines[:-1]] + [lines[-1]]
+    return '\n'.join(out)
+
+
 def build_text(units, ko, cs, gfx_data):
     """반환 {디스크 상대경로: bytes}"""
     by_file = collections.defaultdict(list)
     for u in units:
         if u['id'] not in ko:
             continue
+        t = keep_all(ko[u['id']]) if u.get('kind') == 'room' else ko[u['id']]
         for loc in u['locs']:
             f, path = loc.split('#')
-            by_file[f].append((tuple(int(x) for x in path.split('.')), ko[u['id']]))
+            by_file[f].append((tuple(int(x) for x in path.split('.')), t))
     out = {}
     n_rec = 0
     for f, items in sorted(by_file.items()):
