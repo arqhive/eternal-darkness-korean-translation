@@ -44,6 +44,27 @@ SYM_SRC = {'…': 0x109, '「': 0x10C, '」': 0x10D, '『': 0x10E, '』': 0x10F,
 PUNCT_PAD = 2   # 10/11 본고딕 한글이 칸 끝(23px)까지 차서 뒤 부호가 붙음 → 닫는 부호 그림을 오른쪽으로 2px, 폭 +2
 PUNCT_ASCII = '.,!:;)~'
 PUNCT_SYM = '…」』'
+QUOTE_ASCII = '"'   # 10/20 실기 제보: 영문 쌍따옴표(폭 11, 그림 1~8px)가 한글에 붙음 → 그림 3px 오른쪽, 폭 +5(=16). 1px·+2 는 티가 안 났음
+QUOTE_SHIFT, QUOTE_PAD = 3, 5
+# 10/20 사용자: 「(물체)」 여는 괄호 오른쪽이 넓음(그림 1~7px, 폭 10 → 뒤 한글까지 6px) → 폭 -3(뒤 간격 3px, 닫는 괄호 앞 간격과 비슷)
+PAREN_OPEN_DW = -3
+# 10/20 사용자: 닫는 쪽 왼쪽 간격은 위 값이 좋고, 여는 쪽 오른쪽 간격은 줄이기 → 빌드 때 " 짝을 “(여는)·”(닫는) 두 글자로 나눔.
+# 둘 다 JFonts 의 " 그림(0x22)을 3px 오른쪽으로. 폭은 여는 쪽 11+2=13(뒤 글자와 거의 붙음), 닫는 쪽 11+5=16.
+QUOTE_OPEN, QUOTE_CLOSE = '“', '”'
+QUOTE_W = {QUOTE_OPEN: 2, QUOTE_CLOSE: QUOTE_PAD}
+SYM_SRC.update({QUOTE_OPEN: 0x22, QUOTE_CLOSE: 0x22})
+# 10/20 사용자: 줄 맨 앞 숫자(ASCII 잉크 1px~)가 한글(잉크 4px~)보다 3px 왼쪽으로 튀어나옴 → 앞에 넣는 빈 글자(폭 3)
+LEAD_PAD, LEAD_PAD_W = '\u2009', 3
+
+
+def split_quotes(t):
+    out = []; n = 0
+    for ch in t:
+        if ch == '"':
+            out.append(QUOTE_OPEN if n % 2 == 0 else QUOTE_CLOSE); n += 1
+        else:
+            out.append(ch)
+    return ''.join(out)
 
 
 def disk(rel):
@@ -190,9 +211,9 @@ def glyph(ch):
 
 
 
-def pad_right(g):
+def pad_right(g, n=PUNCT_PAD):
     out = Image.new('RGBA', g.size, (0, 0, 0, 0))
-    out.paste(g.crop((0, 0, g.width - PUNCT_PAD, g.height)), (PUNCT_PAD, 0))
+    out.paste(g.crop((0, 0, g.width - n, g.height)), (n, 0))
     return out
 
 
@@ -224,6 +245,10 @@ def build_fonts(cs, files):
                 g = cell_img(jf, jimgs, SYM_SRC[ch])            # 저장 좌표 그대로
                 if ch in PUNCT_SYM:
                     g = pad_right(g)
+                elif ch in QUOTE_W:
+                    g = pad_right(g, QUOTE_SHIFT)
+            elif ch == LEAD_PAD:
+                g = Image.new('RGBA', (CELL, CELL), (0, 0, 0, 0))
             else:
                 g = glyph(ch).transpose(Image.FLIP_TOP_BOTTOM)
             img.paste(Image.new('RGBA', (CELL, CELL), (0, 0, 0, 0)), (x0, y0))
@@ -232,9 +257,9 @@ def build_fonts(cs, files):
             i, w, h, fmt, doff = imgs[0]
             sheets[0] = tpl.decode(bytes(d), doff, w, h, fmt).convert('RGBA')
         img = sheets[0]; h = img.height
-        for ch in PUNCT_ASCII:
+        for ch in PUNCT_ASCII + QUOTE_ASCII:
             c = ord(ch); x0 = (c % 16) * CELL; y0 = h - (c // 16 + 1) * CELL
-            g = pad_right(img.crop((x0, y0, x0 + CELL, y0 + CELL)))
+            g = pad_right(img.crop((x0, y0, x0 + CELL, y0 + CELL)), QUOTE_SHIFT if ch in QUOTE_ASCII else PUNCT_PAD)
             img.paste(Image.new('RGBA', (CELL, CELL), (0, 0, 0, 0)), (x0, y0)); img.paste(g, (x0, y0))
         for sh, img in sheets.items():
             i, w, h, fmt, doff = imgs[sh]
@@ -252,11 +277,14 @@ def widths(cs):
     blk = d[o:o + s]
     W = {}
     for ch, code in cs.map.items():
-        W[code] = blk[5 + SYM_SRC[ch]] if ch in SYM_SRC else HANGUL_ADV
+        W[code] = blk[5 + SYM_SRC[ch]] if ch in SYM_SRC else LEAD_PAD_W if ch == LEAD_PAD else HANGUL_ADV
         if ch in PUNCT_SYM:
             W[code] += PUNCT_PAD
-    for ch in PUNCT_ASCII:
-        W[ord(ch)] = blk[5 + ord(ch)] + PUNCT_PAD
+        if ch in QUOTE_W:
+            W[code] += QUOTE_W[ch]
+    for ch in PUNCT_ASCII + QUOTE_ASCII:
+        W[ord(ch)] = blk[5 + ord(ch)] + (QUOTE_PAD if ch in QUOTE_ASCII else PUNCT_PAD)
+    W[ord('(')] = blk[5 + ord('(')] + PAREN_OPEN_DW
     return W
 
 
@@ -318,6 +346,7 @@ def main():
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     units, ko = load()
+    ko = {k: split_quotes(v) for k, v in ko.items()}
     cs = Charset(ko.values())
     gfx = build_gfx()
     files = dict(gfx)
