@@ -21,7 +21,7 @@
  "boot:WEAPONS/SCRAMASAZ_DESC": "\\ay스크라마색스\\aw\n프랑크족과 색슨족의 무기.\n묵직한 칼날로 치명적인 베기 공격을\n퍼붓는다. 방어보다 공격을 위해\n만들어져 손 보호대가 없다.",
  "boot:WEAPONS/SCRAMASAZ_PICKUP": "~p는(은) \\ay스크라마색스\\aw를\n손에 넣었다!",
  "boot:WEAPONS/TWO_EDGE_SWORD_INV": "양날검",
- "boot:WEAPONS/TWO_EDGE_SWORD_DESC": "\\ay양날검\\aw\n날이 양쪽에 선 묵직한 한손검.\n한 손으로 쥐고 다른 손으로 받칠 수 있는\n긴 자루 때문에 바스타드 소드, 또는\n\"한 손 반\" 검이라고도 불린다.",
+ "boot:WEAPONS/TWO_EDGE_SWORD_DESC": "\\ay양날검\\aw\n날이 양쪽에 선 묵직한 한손검.\n한 손으로 쥐고 다른 손으로 받칠 수 있는\n긴 자루 때문에 바스타드 소드, 또는\n\"핸드 앤드 하프 소드\"라고도 불린다.",
  "boot:WEAPONS/TWO_EDGE_SWORD_PICKUP": "~p는(은) \\ay양날검\\aw을 손에 넣었다!",
  "boot:WEAPONS/TORCH_INV": "횃불",
  "boot:WEAPONS/TORCH_DESC": "\\ay횃불\\aw\n예로부터 흔히 쓰인 조명.\n앞길을 밝히거나 적에게 불을\n붙일 수 있다.",

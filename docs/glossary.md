@@ -162,7 +162,7 @@
 | Gladius / Enchanted Gladius | 글라디우스 / 빛의 글라디우스 | グラディウス / 光のグラディウス |
 | Short Sword / Broken Short Sword | 쇼트 소드 / 부서진 쇼트 소드 | タリボン |
 | Two-Edged Sword | 양날검 | ロング・ソード |
-| Tulwar / Dual Tulwar | 털와르 / 쌍털와르 | タルワール / ダブル・タルワール |
+| Tulwar / Dual Tulwar | 털와르 / 털와르 두 자루 | タルワール / ダブル・タルワール |
 | Saif / Sabre / Kukri / Ram Dao / Scramasax | 사이프 / 세이버 / 쿠크리 / 람다오 / 스크라마색스 | |
 | Mace / Staff / Metal Staff | 메이스 / 지팡이 / 쇠지팡이 | メイス / 杖 / メタル・スタッフ |
 | Crossbow / Crossbow Bolts | 석궁 / 석궁 화살 | ボウガン / ボウガンの矢 |

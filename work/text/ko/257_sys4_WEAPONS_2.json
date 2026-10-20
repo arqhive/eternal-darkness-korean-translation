@@ -13,7 +13,7 @@
  "boot:WEAPONS/PUMP_SHOT_INV": "샷건",
  "boot:WEAPONS/PUMP_SHOT_PICKUP": "~p는(은) \\ay샷건\\aw을 손에 넣었다!",
  "boot:WEAPONS/AXE_DESC": "\\ay털와르\\aw\n휘어진 칼날에 묵직한 날을 지닌 칼.\n대부분 둥근 자루와 자루 끝을 지녀\n알아보기 쉽다. 이제 카림은 양손에\n하나씩 들고 싸울 수 있다!",
- "boot:WEAPONS/AXE_INV": "쌍털와르",
+ "boot:WEAPONS/AXE_INV": "털와르\n두 자루",
  "boot:WEAPONS/AXE_PICKUP": "~p는(은) \\ay털와르\\aw를 손에 넣었다!\n이제 카림은 털와르 두 자루를\n동시에 휘두를 수 있다!",
  "boot:WEAPONS/ENFIELD_REVOLVER_DESC": "\\ay리볼버\\aw\n엔필드 Mk1 스타 리볼버. 제1차 세계\n대전 전에 나왔다. 여섯 발 들어가는\n중절식 실린더를 갖춘 더블 액션\n권총으로, .380 리볼버 탄을 쓴다.",
  "boot:WEAPONS/ENFIELD_REVOLVER_INV": "리볼버",

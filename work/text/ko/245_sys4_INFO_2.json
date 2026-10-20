@@ -9,7 +9,7 @@
  "boot:INFO/GATE4_PICKUP": "알렉스는 책장 사이에 끼워진\n종잇조각을 찾았다.\n\\ay에드워드의 쪽지\\aw 같다.",
  "boot:INFO/ORDERS_INV": "병사의\n명령서",
  "boot:INFO/ORDERS_PICKUP": "~p는(은) \\ay병사의 명령서\\aw를\n손에 넣었다!",
- "boot:INFO/MAXJOURN5_INV": "M. 로이바스 일지\n마지막 기록",
+ "boot:INFO/MAXJOURN5_INV": "M. 로이바스 일지\n마지막 기록",
  "boot:INFO/MAXJOURN5_PICKUP": "~p는(은)\n\\ay맥시밀리언 로이바스 일지의 한 장\\aw을\n찾았다!",
  "boot:INFO/MAX_LETTER4_INV": "네 번째\n편지",
  "boot:INFO/MAX_LETTER4_PICKUP": "\\ay봉투\\aw 안에는 맥스의 아버지가\n보좌관 한 사람에게 보낸 \\ay편지\\aw가\n들어 있었다."
