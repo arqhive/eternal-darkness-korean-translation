@@ -81,11 +81,16 @@ class Charset:
 def set_rec(tabs, ti, k, data, cs):
     it = tabs[ti][k]
     body, _ = bpe.decode(it, 4)
+    if not body[0x10] & 0x80:
+        # 10/20: 레코드 머리 0x10 의 0x80 = 2바이트 글자. 꺼진 레코드(영어 자막용 JBtPakES 의 실시간·음성 자막 384,
+        # JBkPkJES 237)는 자막 「영어」에서 1바이트로만 그려져 한글이 외계어가 됨(실기 확인, 표시를 켜도 그대로) → 원래 영어로 둔다.
+        return False
     nb = new_body(body, cs.encode(data))
     rec = it[:4] + bpe.encode(nb)
     chk, _ = bpe.decode(rec, 4)
     assert chk == nb, 'BPE 왕복 실패'
     tabs[ti][k] = rec
+    return True
 
 
 def pak_parse(d):
@@ -94,8 +99,9 @@ def pak_parse(d):
 
 
 # 10/20: 방 조사 창은 게임이 글자 단위로 자동 줄바꿈해서 낱말이 잘림(「알렉스/는」). 띄어쓰기 자리에서 미리 줄을 바꿔 넣는다.
-# 한계는 사용자 캡처로 잼: 618px 줄은 들어가고 628px 에서 꺾임 → 여유 두고 615px.
-ROOM_WRAP = 615
+# 한계는 사용자 캡처로 잼: 현관 홀에서 618px 줄은 들어갔지만, 10/20 실기(16:9) 216번 방에서 553px 줄 뒤 576px 에서 꺾임
+# → 창 폭이 화면 설정·장소마다 다름. 확인된 가장 좁은 값 아래로 550px.
+ROOM_WRAP = 550
 
 
 def keep_all(t, maxw=ROOM_WRAP):
@@ -126,20 +132,20 @@ def build_text(units, ko, cs, gfx_data):
         if name.startswith('JRmTxt'):
             tabs = txtpak.parse(src)
             for (ti, k), t in items:
-                set_rec(tabs, ti, k, t, cs); n_rec += 1
+                n_rec += set_rec(tabs, ti, k, t, cs)
             out[rel] = txtpak.build(tabs)
         elif name.startswith('cin'):
             repl = {}
             for (i, ti, k), t in items:
                 if i not in repl:
                     repl[i] = txtpak.cin_text(src, i)
-                set_rec(repl[i], ti, k, t, cs); n_rec += 1
+                n_rec += set_rec(repl[i], ti, k, t, cs)
             out[rel] = txtpak.cin_build(src, repl)
         elif name == 'JMemcardText.bin':
             tabs = txtpak.parse(struct.pack('>I', len(src)) + src)
             for (st, ti, k), t in items:
                 assert st == 16
-                set_rec(tabs, ti, k, t, cs); n_rec += 1
+                n_rec += set_rec(tabs, ti, k, t, cs)
             out[rel] = txtpak.build(tabs)[4:]
         else:   # 시스템·책 묶음
             d = bytearray(src)
@@ -152,7 +158,7 @@ def build_text(units, ko, cs, gfx_data):
                 o, s = ents[b]
                 tabs = txtpak.parse(struct.pack('>I', s) + bytes(d[o:o + s]))
                 for ti, k, t in its:
-                    set_rec(tabs, ti, k, t, cs); n_rec += 1
+                    n_rec += set_rec(tabs, ti, k, t, cs)
                 repl[b] = txtpak.build(tabs)[4:]
             out[rel] = (d, repl)   # 폭 표·재조립은 뒤에서
     print('텍스트 레코드', n_rec, '곳 /', len(out), '파일')
