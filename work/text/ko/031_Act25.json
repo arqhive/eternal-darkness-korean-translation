@@ -1,10 +1,10 @@
 {
- "cin:Act25/LICHE_You_are_not_free": "참으로 조잡한 속박 주문이군. 가디언들을 막아 낸 게 놀랍다.\n너는 이 세계를 마음대로 떠날 수 없다.",
- "cin:Act25/XEL_You_are_not_free": "너는 이 세계를 마음대로 떠날 수 없다.",
- "cin:Act25/LICHE_until_you_complete": "내 일을 하나 끝내기 전까지는.",
+ "cin:Act25/LICHE_You_are_not_free": "알겠나, 내 말을 잘 들어라.",
+ "cin:Act25/XEL_You_are_not_free": "알겠나, 내 말을 잘 들어라.",
+ "cin:Act25/LICHE_until_you_complete": "간단한 일을 하나 해 줘야겠다.",
  "cin:Act25/LICHE_You_are_to_hunt": "이 저택의 주인을 찾아내 죽여라.",
- "cin:Act25/LICHE_Do_this_one_thing": "이 일만 해내면 풀어 주지.",
- "cin:Act25/CHAT_else_fear_the_wrath": "실패하면 차투르가의 노여움을 두려워해야 할 것이다.",
- "cin:Act25/ULY_else_fear_the_wrath": "실패하면 울리아오스의 노여움을 두려워해야 할 것이다.",
- "cin:Act25/XEL_else_fear_the_wrath": "실패하면 젤로타스의 노여움을 두려워해야 할 것이다."
+ "cin:Act25/LICHE_Do_this_one_thing": "그다음은 마음대로 해도 좋다.",
+ "cin:Act25/CHAT_else_fear_the_wrath": "단… 실패는 용서하지 않는다!",
+ "cin:Act25/ULY_else_fear_the_wrath": "단… 실패는 용서하지 않는다!",
+ "cin:Act25/XEL_else_fear_the_wrath": "단… 실패는 용서하지 않는다!"
 }
