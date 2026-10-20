@@ -33,8 +33,7 @@ CFG = {
     # 옵션 화면 선택지(검정 바탕 흰 글자, 빛 없음): 원본 글자 가운데
     'g139': {'text': '켬', 'size': 22, 'white': True, 'plain': True, 'halo': True, 'bold': True},
     'g140': {'text': '끔', 'size': 22, 'white': True, 'plain': True, 'halo': True, 'bold': True},
-    # 10/20 자막 두 벌: 자막 언어 「한국어」→「일본어」(일본어 자막 목록 = 일본어 원문 번역)
-    'g143': {'text': '일본어', 'size': 22, 'white': True, 'plain': True, 'halo': True, 'bold': True},
+    'g143': {'text': '한국어', 'size': 22, 'white': True, 'plain': True, 'halo': True, 'bold': True},
     'g144': {'text': '영어', 'size': 22, 'white': True, 'plain': True, 'halo': True, 'bold': True},
     # 옵션 항목 고를 때(빛 있는 흰 글자): g127 글자와 같은 크기, 원본 시작점 왼쪽 맞춤 / 선택지는 가운데
     'g145': {'text': '자막', 'size': 22, 'white': True, 'left': True, 'halo': True},
@@ -57,8 +56,8 @@ CFG = {
     'g163': {'text': '슬롯 A', 'size': 22, 'tint': True, 'soft': True},
     'g164': {'text': '슬롯 B', 'size': 22, 'tint': True, 'soft': True},
     # 언어 선택(빛 있는 흰 글자): 낱말마다 일본어 자리 / 선택지는 g143·g144와 같은 자리에 빛만 더함
-    'g167': {'text': '언어 선택|일본어', 'size': 22, 'white': True, 'halo': True, 'bold': True, 'words': True},
-    'g168': {'text': '일본어', 'size': 22, 'white': True, 'halo': True, 'bold': True},
+    'g167': {'text': '언어 선택|한국어', 'size': 22, 'white': True, 'halo': True, 'bold': True, 'words': True},
+    'g168': {'text': '한국어', 'size': 22, 'white': True, 'halo': True, 'bold': True},
     'g169': {'text': '영어', 'size': 22, 'white': True, 'halo': True, 'bold': True},
     'g059': {'text': '진동  기능:', 'size': 20, 'right': True, 'halo': True, 'bold': True},
 }

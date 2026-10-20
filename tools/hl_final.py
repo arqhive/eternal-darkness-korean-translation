@@ -41,10 +41,7 @@ PLATE = {'g046': 'g057', 'g047': 'g058'}
 
 
 def mask(i):
-    p = MASK % i
-    if i == 'g053' and os.path.exists(p.replace('.png', '_일본어.png')):   # 10/20 옵션 「한국어」→「일본어」(자막 두 벌)
-        p = p.replace('.png', '_일본어.png')
-    return np.asarray(Image.open(p).convert('L')).astype(float) / 255
+    return np.asarray(Image.open(MASK % i).convert('L')).astype(float) / 255
 
 
 def glow(mk, scale, left_only=False):
