@@ -34,7 +34,7 @@
  "boot:BOOK_TUTORIAL/HEALTH": "\\ar체력 게이지\\aw\n\\ar생명력\\aw을 나타낸다. 캐릭터가 \\ar피해\\aw를 입을 때마다\n줄어들고, 0이 되면 캐릭터는 죽는다.",
  "boot:BOOK_TUTORIAL/MAGICK": "\\ab마력 게이지\\aw\n캐릭터의 \\ab마력\\aw을 나타낸다. 주문을 외면 줄어들고,\n캐릭터가 움직이는 동안 다시 차오른다.",
  "boot:BOOK_TUTORIAL/SANITY": "\\ag정신력 게이지\\aw\n캐릭터의 \\ag정신력\\aw을 나타낸다. 괴물과 마주칠\n때마다 \\ag정신력\\aw이 떨어지고, 낮아질수록 캐릭터는\n더 많은 환각을 본다.",
- "boot:MAGIC_TUTORIAL/CIRCLE": "\\ay힘의 원\\ab은 주문이 지닐 힘의 크기를 나타낸다.\n원의 점이 많을수록 주문이 강해진다.\\aw",
+ "boot:MAGIC_TUTORIAL/CIRCLE": "\\ay힘의 원\\ab은 주문이 지닐 힘의 크기를 나타낸다.\n원의 포인트가 많을수록 주문이 강해진다.\\aw",
  "boot:MAGIC_TUTORIAL/RUNES": "\\ay룬\\ab은 \\ay주문\\ab을 만드는 핵심 요소다. \\ay룬\\ab을 모아 여러\n방식으로 조합하면 다양한 \\ay주문\\ab을 만들 수 있다.\\aw",
  "boot:MAGIC_TUTORIAL/CODEX": "\\ay코덱스\\aw\n\\ab룬은 \\ay코덱스\\ab 없이는 알 수 없다. \\ay코덱스\\ab가 없으면\n가진 룬의 뜻은 수수께끼로 남는다.\\aw",
  "boot:MAGIC_TUTORIAL/CAST": "\\ay사용\\aw\n\\ab찾아내거나 연구해 얻은 주문을 쓸 수 있다.",

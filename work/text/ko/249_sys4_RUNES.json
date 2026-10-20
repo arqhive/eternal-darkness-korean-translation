@@ -14,7 +14,7 @@
  "boot:RUNES/XEL_DESC": "\\ag젤로타스\\aw\n정신과 광기의 여주인 \\ax젤로타스\\aw의 상징.\n\\ay타락의 그림자\\aw의 힘을 불러낼 때 쓴다.",
  "boot:RUNES/XEL_INV": "\\ax젤로타스\\aw",
  "boot:RUNES/XEL_PICKUP": "~p는(은) \\ay마법 룬\\aw을 찾았다!",
- "boot:RUNES/MANT_DESC": "\\am만토록\\aw\n혼돈의 지배자이자 고대신의 수호자인\n\\am만토록\\aw의 상징.\n\\ay시체의 신\\aw의 힘을 불러낼 때 쓴다.",
+ "boot:RUNES/MANT_DESC": "\\am만토록\\aw\n혼돈의 지배자이자 고대신의 수호자인\n\\am만토록\\aw의 상징.\n\\ay시체 신\\aw의 힘을 불러낼 때 쓴다.",
  "boot:RUNES/MANT_INV": "\\am만토록\\aw",
  "boot:RUNES/MANT_PICKUP": "~p는(은) \\ay마법 룬\\aw을 찾았다!",
  "boot:RUNES/PARGON_DESC": "\\ay파르곤\\aw\n\\ay\"힘\"\\aw을 뜻하는 룬.\n주문에 \\ay힘을 더할\\aw 때 쓴다.",

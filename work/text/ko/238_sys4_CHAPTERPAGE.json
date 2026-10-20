@@ -1,7 +1,7 @@
 {
- "boot:CHAPTERPAGE/ELLIA_PICKUP": "~p는(은) \\ay\"시체의 신의 봉인\"\\aw이라는\n\\ay챕터 페이지\\aw를 찾았다!",
- "boot:CHAPTERPAGE/ELLIA_DESC": "\\am영원한 어둠의 서\\aw의 \\ay한 장\\aw인 것 같다.\n\\ay\"시체의 신의 봉인\"\\aw이라는 제목이 붙어 있다.\n\n이 \\ay챕터 페이지\\aw를 읽겠습니까?\n\n아니요　\\i21　　예　\\i20",
- "boot:CHAPTERPAGE/ELLIA_INV": "챕터 페이지\n\"시체의 신의 봉인\"",
+ "boot:CHAPTERPAGE/ELLIA_PICKUP": "~p는(은) \\ay\"시체 신의 봉인\"\\aw이라는\n\\ay챕터 페이지\\aw를 찾았다!",
+ "boot:CHAPTERPAGE/ELLIA_DESC": "\\am영원한 어둠의 서\\aw의 \\ay한 장\\aw인 것 같다.\n\\ay\"시체 신의 봉인\"\\aw이라는 제목이 붙어 있다.\n\n이 \\ay챕터 페이지\\aw를 읽겠습니까?\n\n아니요　\\i21　　예　\\i20",
+ "boot:CHAPTERPAGE/ELLIA_INV": "챕터 페이지\n\"시체 신의 봉인\"",
  "boot:CHAPTERPAGE/ANTHONY_DESC": "\\am영원한 어둠의 서\\aw의 \\ay한 장\\aw인 것 같다.\n\\ay\"음모의 의혹\"\\aw이라는 제목이 붙어 있다.\n\n이 \\ay챕터 페이지\\aw를 읽겠습니까?\n\n아니요　\\i21　　예　\\i20",
  "boot:CHAPTERPAGE/ANTHONY_INV": "챕터 페이지\n\"음모의 의혹\"",
  "boot:CHAPTERPAGE/ANTHONY_PICKUP": "~p는(은) \\ay\"음모의 의혹\"\\aw이라는\n\\ay챕터 페이지\\aw를 찾았다!",

@@ -1,5 +1,5 @@
 {
- "boot:KEYS/JUNCTION_INV": "분기실\n열쇠",
+ "boot:KEYS/JUNCTION_INV": "분기실 열쇠",
  "boot:KEYS/JUNCTION_DESC": "\\ay분기실 열쇠\n분기실\\aw의 \\ay열쇠\\aw.\n묵직하고 녹슬어 있다.",
  "boot:KEYS/JUNCTION_PICKUP": "~p는(은) \\ay분기실 열쇠\\aw를 얻었다.",
  "boot:KEYS/GATE_INV": "철문\n열쇠",

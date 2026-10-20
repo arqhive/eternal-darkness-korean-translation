@@ -10,7 +10,7 @@
  "boot:ACT27A_XEL/XEL2_There_are_other": "가디언 무리는 그 밖에도 있습니다.",
  "boot:ACT27A_XEL/XEL2_The_loss_of_one": "하나쯤 잃어도 아무 의미 없습니다.",
  "boot:ACT27A_XEL/XEL1_That_is_the_only": "전할 재앙은 그것뿐이야?",
- "boot:ACT27A_XEL/LICHE_Yes_my_magnificence": "네, 주인님. 그것뿐입니다.",
+ "boot:ACT27A_XEL/LICHE_Yes_my_magnificence": "네, 주인님. 그것뿐입니다. 다른 일은 없습니다.",
  "boot:ACT27A_XEL/LICHE_There_are_no_others": "다른 일은 없습니다.",
  "boot:ACT27A_XEL/XEL1_And_what_of_your": "그럼 우리를 배신한 일은요?",
  "boot:ACT27A_XEL/LICHE_Treachery": "배신이라니요?",
@@ -22,7 +22,7 @@
  "boot:ACT27A_XEL/XEL1_The_future_has": "미래가 내 앞에 펼쳐졌습니다.",
  "boot:ACT27A_XEL/XEL1_through_a_vision": "환영으로 보았습니다.",
  "boot:ACT27A_XEL/XEL2_One_of_my_many": "내가 본 수많은 환영 중 하나…",
- "boot:ACT27A_XEL/XEL1_A_vision_of_my": "내가 '부재하는 공포',",
+ "boot:ACT27A_XEL/XEL1_A_vision_of_my": "내가 「부재하는 공포」,",
  "boot:ACT27A_XEL/XEL1_Ulyaoth_master_of": "차원의 지배자 울리아오스를 꺾는 모습이요.",
  "boot:ACT27A_XEL/XEL1_planes_is_no_match#1": "차원을 다루는 마법 따위는",
  "boot:ACT27A_XEL/XEL1_planes_is_no_match#2": "차원을 다루는 마법 따위는",
@@ -30,6 +30,6 @@
  "boot:ACT27A_XEL/XEL1_for_the_power_of": "정신의 힘 앞에서는 상대가 되지 않으니",
  "boot:ACT27A_XEL/XEL1_and_thus_it_will": "그러니 파멸할 것입니다.",
  "boot:ACT27A_XEL/LICHE_Then_the_gates": "그렇다면 문을 열겠습니다.",
- "boot:ACT27A_XEL/LICHE_and_you_shall_once": "주인님께서 다시 이 땅에",
+ "boot:ACT27A_XEL/LICHE_and_you_shall_once": "주인님께서 다시 이 땅에 강림하시도록.",
  "boot:ACT27A_XEL/LICHE_with_your_presence": "강림하시도록."
 }

@@ -41,7 +41,7 @@
  "boot:SPECIAL/MEDROD_INV": "명상 지팡이",
  "boot:SPECIAL/MEDROD_PICKUP": "~p는(은) \\ay명상 지팡이\\aw를 찾았다.",
  "boot:SPECIAL/MAG_RECOVER_DESC": "\\ay마력 물약\\aw\n이 빠진 코르크로 막은 작고 뿌연 푸른빛 병.\n이 \\ay물약\\aw을 마시면 ~p의\n\\ab마력 게이지\\aw가 완전히 회복된다.",
- "boot:SPECIAL/MAG_RECOVER_INV": "마력\n물약",
+ "boot:SPECIAL/MAG_RECOVER_INV": "마력 물약",
  "boot:SPECIAL/MAG_RECOVER_PICKUP": "~p는(은) \\ay마력 물약\\aw을 찾았다.",
  "boot:SPECIAL/C4_NOT_HERE": "마이클은 여기서 \\ayC4 폭탄\\aw을 쓸 수 없다.\n폭탄을 쓰기에 가장 알맞은 곳을 찾아야 한다."
 }

@@ -9,6 +9,6 @@
  "boot:ARTIFACTS/XELATOTH_DESC": "\\ag젤로타스의 정수\\aw\n젤로타스의 인장이 섬뜩한 \\ax녹색\\aw 빛을\n내뿜는다. 마치 주변 공기가 광기 그 자체로\n자아지는 것 같다.",
  "boot:ARTIFACTS/XELATOTH_PICKUP": "~p는(은) \\ax젤로타스의 정수\\aw를\n손에 넣었다!",
  "boot:ARTIFACTS/MANTOROK_INV": "만토록의\n정수",
- "boot:ARTIFACTS/MANTOROK_DESC": "\\am만토록의 정수\\aw\n\\am만토록\\aw의 심장이 불경한 생명으로 고동친다.\n시체의 신 \\am만토록\\aw은 다른 곳에서 썩어 가고\n있지만, 그 힘은 이 유물 안에 깃들어 있다.",
+ "boot:ARTIFACTS/MANTOROK_DESC": "\\am만토록의 정수\\aw\n\\am만토록\\aw의 심장이 불경한 생명으로 고동친다.\n시체 신 \\am만토록\\aw은 다른 곳에서 썩어 가고\n있지만, 그 힘은 이 유물 안에 깃들어 있다.",
  "boot:ARTIFACTS/MANTOROK_PICKUP": "~p는(은) \\am만토록의 정수\\aw를\n손에 넣었다!"
 }

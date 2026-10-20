@@ -37,7 +37,7 @@
 | Ulyaoth | 울리아오스 | ウーリアス | 푸른 속성(마력) |
 | Xel'lotath | 젤로타스 | ゼロタース | 초록 속성(정신력) |
 | Mantorok | 만토록 | マントロク | 보라 속성, 「Corpse God」 |
-| Corpse God | 시체의 신 | 死神 | |
+| Corpse God | 시체 신 | 死神 | |
 | Master of Chaos | 혼돈의 지배자 | | |
 | Eternal Darkness | 영원한 어둠 | 永遠の闇 | 게임 제목은 「이터널 다크니스」 그대로 |
 | Guardian(s) | 가디언 | ガーディアン | |
@@ -59,7 +59,7 @@
 | Magickal Rune | 마법 룬 | 魔法のルーン | |
 | Rune | 룬 | ルーン | |
 | Circle of Power | 힘의 원 | パワー・サークル | |
-| 3/5/7-Pointed Circle of Power | 3점/5점/7점 힘의 원 | パワー・サークル(３ポイント) | |
+| 3/5/7-Pointed Circle of Power | 3포인트/5포인트/7포인트 힘의 원 | パワー・サークル(３ポイント) | |
 | 3 Point / 5 Point / 7 Point | 3점 / 5점 / 7점 | ３ポイント | |
 | Alignment | 속성 | アライメント | |
 | Non Aligned | 무속성 | なし | |
