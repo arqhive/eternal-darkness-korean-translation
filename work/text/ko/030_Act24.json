@@ -1,12 +1,12 @@
 {
- "cin:Act24/LICHE_I_am_the_scourge": "나는 신의 채찍이다.",
- "cin:Act24/LICHE_appointed_to_chastise": "너희를 벌하라는 명을 받았다.",
- "cin:Act24/LICHE_since_no_one_knows": "너희의 죄악을 다스릴 수 있는 자는",
+ "cin:Act24/LICHE_I_am_the_scourge": "나는 신의 채찍,",
+ "cin:Act24/LICHE_appointed_to_chastise": "너희를 벌하라는 명을 받은 자다.",
+ "cin:Act24/LICHE_since_no_one_knows": "너희의 죄악을 고칠 방법을 아는 자는",
  "cin:Act24/LICHE_except_me": "나밖에 없으니까.",
- "cin:Act24/LICHE_You_are_wicked": "너희는 사악하다.",
- "cin:Act24/LICHE_but_I_am_more": "하지만 나는 너희보다 더 사악하다.",
+ "cin:Act24/LICHE_You_are_wicked": "너희는 사악하지만,",
+ "cin:Act24/LICHE_but_I_am_more": "나는 너희보다 더 사악하다.",
  "cin:Act24/LICHE_So_be_silent": "그러니 입 다물어라!",
- "cin:Act24/LICHE_Now_you_architect": "자, 건축가.",
- "cin:Act24/LICHE_You_are_about_to": "이제 이 일에 네 생애 최고의 공헌을 하게 될 것이다.",
+ "cin:Act24/LICHE_Now_you_architect": "이제 너다, 건축가.",
+ "cin:Act24/LICHE_You_are_about_to": "너는 이제 가장 큰 공헌을 하게 될 것이다, 이 공사에 말이다.",
  "cin:Act24/TITLE_Chapter_Complete": "챕터　종료"
 }

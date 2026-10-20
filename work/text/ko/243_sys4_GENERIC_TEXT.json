@@ -41,5 +41,5 @@
  "boot:GENERIC_TEXT/NO_MANT_SUMMON": "\\am만토록\\aw 룬은 \\ay소환\\aw 마법에 쓸 수 없다.\n\\am만토록\\aw이 봉인되어 힘이 약해진 탓에\n더는 이런 주문에 힘을 보태지 못한다.",
  "boot:GENERIC_TEXT/NOT_ENOUGH_COMPONENTS": "지금은 주문을 연구할 만큼\n\\ay룬\\aw이 모이지 않았다.",
  "boot:GENERIC_TEXT/WOULD_YOU_LIKE_TO_SAVE_NOW": "앞으로 나아가기 전에\n지금까지의 진행을 저장하시겠습니까?\n\n아니요　\\i21　　예　\\i20",
- "boot:GENERIC_TEXT/PIOUS_DEATH": "피우스는 황제의 명을 받들다 쓰러졌다.\n성스러운 유물은 사막의 모래 아래\n숨겨진 채 기다리고 있다…"
+ "boot:GENERIC_TEXT/PIOUS_DEATH": "파이우스는 황제의 명을 받들다 쓰러졌다.\n성스러운 유물은 사막의 모래 아래\n숨겨진 채 기다리고 있다…"
 }
