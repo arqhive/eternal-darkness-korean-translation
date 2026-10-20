@@ -8,7 +8,7 @@
    「한국어」(g053)는 같은 방법이지만 사용자가 화면 보며 맞춘 자리(내용 왼쪽 3·아래 2) — 새 원점 계산과 같은 값.
 2) 켬·끔 판(g046·g047) 평상시 글자: 글자 마스크 속을 일본판 글자 심 색으로(옅게 보인다는 지적).
 3) 노란 선택 글씨 8장(투명도 합성, CMPR 이라 투명도 0/255 두 값뿐)
-   GPT 그림의 3~4px 반투명 그림자가 압축 뒤 울퉁불퉁한 갈색 덩어리 → 노란 심 + 불투명 갈색 테두리 2px,
+   GPT 그림의 3~4px 반투명 그림자가 압축 뒤 울퉁불퉁한 갈색 덩어리 → 노란 획(판 글씨와 같은 글자 마스크) + 갈색 한 색 테두리 2px,
    판 회색 글씨가 비칠 자리(판 밝은 글씨 +1px, 심에서 4px 안)는 테두리로 덮음. 그 밖은 투명. (3px 은 더 지저분해서 되돌림)
    16:9 인벤토리도 4:3 그림을 그대로 씀(사용자 확인: JWideInv 그림을 바꿔도 화면 변화 없음). JWideInv 쪽은 wide_sync 자르기만.
 
@@ -83,19 +83,25 @@ def make_plate(b):
 
 
 def make_yellow(i, ring_px=2.5):
+    """노란 획 = 판 회색 글씨와 같은 글자 마스크(색은 가장 가까운 GPT 노란 화소), 그 밖 ring_px 은 갈색 한 색, 나머지 투명.
+    (10/20 사용자: 노란 글씨가 회색보다 약간 작고 주변에 노란 잡티 → GPT 획 가장자리 중간색을 테두리로 쳐서 획이 얇아지고 잡티가 남았음)"""
     b, x, y = PAIRS[i][:3]
     a = np.asarray(Image.open(os.path.join(BAK, i + '_테두리이전.png')).convert('RGBA')).astype(float)
     h, w = a.shape[:2]; al = a[..., 3]
-    core = (al > 200) & (a[..., 1] > a[..., 2] + 20) & (a[..., :3].mean(2) > 90)
+    gcore = (al > 200) & (a[..., 1] > a[..., 2] + 20) & (a[..., :3].mean(2) > 90)
+    bc = a[(distance_transform_edt(~gcore) > 0) & (distance_transform_edt(~gcore) <= 1.5) & (al > 200)][:, :3].mean(0)
+    core = (mask(i) > 0.35) | gcore
+    _, (iy, ix) = distance_transform_edt(~gcore, return_indices=True)
+    out = np.zeros((h, w, 4))
+    out[core, :3] = a[iy, ix][core][:, :3]; out[core, 3] = 255
     d = distance_transform_edt(~core)
     reg = np.pad(P.rgba(b, 'done').astype(float), ((0, 4), (0, 4), (0, 0)))[y:y + h, x:x + w]
     RL = reg[..., :3].mean(2)
-    let = binary_dilation((RL > median_filter(RL, size=9) + 10) & (reg[..., 3] > 128), iterations=1)
-    ring = ((d > 0) & (d <= ring_px)) | (let & (d > 0) & (d <= ring_px + 2))
-    bc = a[(d > 0) & (d <= 1.5) & (al > 200)][:, :3].mean(0)
-    a[ring & ((al < 128) | (a[..., :3].mean(2) > bc.mean() + 25)), :3] = bc
-    a[ring, 3] = 255; a[~ring & ~core, 3] = 0
-    return a.round().astype(np.uint8)
+    gray = np.abs(reg[..., 0] - reg[..., 2]) < 25        # 판 글씨는 회색(판 테두리 장식 같은 갈색은 빼야 「장」 밑에 줄이 안 생김)
+    let = binary_dilation((RL > median_filter(RL, size=9) + 10) & (reg[..., 3] > 128) & gray, iterations=1)
+    ring = (((d > 0) & (d <= ring_px)) | (let & (d > 0) & (d <= ring_px + 2))) & ~core
+    out[ring, :3] = bc; out[ring, 3] = 255
+    return out.round().astype(np.uint8)
 
 
 def main():
