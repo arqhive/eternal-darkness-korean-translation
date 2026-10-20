@@ -29,3 +29,8 @@ work/gfx/*
 !work/glyph_fix.tsv
 # 영상 인코더 실행 파일(libtheora 소스로 직접 빌드, tools/fmv_logo.py 설명 참고)
 tools/fmv/*.exe
+# 컷신 영어 자막 목록 번역(10/20 자막 두 벌): 번역만 넣고 원문 단위·묶음·대조표·메모는 빼기(units.json 은 tools/extract_ensub.py 로 다시 만듦)
+!work/text/ensub/
+work/text/ensub/*
+!work/text/ensub/ko/
+work/text/ensub/ko/*_notes.json

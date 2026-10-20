@@ -67,6 +67,20 @@ def load():
     return units, ko
 
 
+def load_ensub():
+    """10/20 자막 두 벌: 컷신 영어 자막 목록(북미판 줄 나눔)에 넣는 한글. 없으면 빈 목록.
+    반환 [(locs, 한글)] — locs 는 extract_ensub 형식('Levels/LevelNN/cinNNNN.bin#i.ti.k')."""
+    d = os.path.join(ROOT, 'work', 'text', 'ensub')
+    if not os.path.exists(os.path.join(d, 'units.json')):
+        return []
+    tr = {}
+    kd = os.path.join(d, 'ko')
+    for x in sorted(os.listdir(kd)) if os.path.isdir(kd) else []:
+        if x.endswith('.json') and not x.endswith('_notes.json'):
+            tr.update(json.load(open(os.path.join(kd, x), encoding='utf-8')))
+    return [(u['locs'], tr[u['id']]) for u in json.load(open(os.path.join(d, 'units.json'), encoding='utf-8')) if u['id'] in tr]
+
+
 class Charset:
     def __init__(self, texts):
         chars = sorted({c for t in texts for c in t if ord(c) >= 0x80})
@@ -94,8 +108,9 @@ def pak_parse(d):
 
 
 # 10/20: 방 조사 창은 게임이 글자 단위로 자동 줄바꿈해서 낱말이 잘림(「알렉스/는」). 띄어쓰기 자리에서 미리 줄을 바꿔 넣는다.
-# 한계는 사용자 캡처로 잼: 618px 줄은 들어가고 628px 에서 꺾임 → 여유 두고 615px.
-ROOM_WRAP = 615
+# 한계는 사용자 캡처로 잼: 현관 홀에서 618px 줄은 들어갔지만, 10/20 실기(16:9) 216번 방에서 553px 줄 뒤 576px 에서 꺾임
+# → 창 폭이 화면 설정·장소마다 다름. 확인된 가장 좁은 값 아래로 550px.
+ROOM_WRAP = 550
 
 
 def keep_all(t, maxw=ROOM_WRAP):
@@ -107,9 +122,13 @@ def keep_all(t, maxw=ROOM_WRAP):
     return '\n'.join(out)
 
 
-def build_text(units, ko, cs, gfx_data):
+def build_text(units, ko, cs, gfx_data, ensub=()):
     """반환 {디스크 상대경로: bytes}"""
     by_file = collections.defaultdict(list)
+    for locs, t in ensub:   # 컷신 영어 자막 목록(같은 컷신 파일의 다른 묶음 번호)
+        for loc in locs:
+            f, path = loc.split('#')
+            by_file[f[len('Levels/'):] if f.startswith('Levels/') else f].append((tuple(int(x) for x in path.split('.')), t))
     for u in units:
         if u['id'] not in ko:
             continue
@@ -312,10 +331,11 @@ def main():
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     units, ko = load()
-    cs = Charset(ko.values())
+    ensub = load_ensub()
+    cs = Charset(list(ko.values()) + [t for _, t in ensub])
     gfx = build_gfx()
     files = dict(gfx)
-    txt = build_text(units, ko, cs, gfx)
+    txt = build_text(units, ko, cs, gfx, ensub)
     W = widths(cs)
     for rel, v in txt.items():
         if isinstance(v, tuple):
