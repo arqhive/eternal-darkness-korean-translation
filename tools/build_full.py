@@ -49,11 +49,12 @@ QUOTE_SHIFT, QUOTE_PAD = 3, 5
 # 10/20 사용자: 「(물체)」 여는 괄호 오른쪽이 넓음(그림 1~7px, 폭 10 → 뒤 한글까지 6px) → 폭 -3(뒤 간격 3px, 닫는 괄호 앞 간격과 비슷)
 PAREN_OPEN_DW = -3
 # 10/20 사용자: 닫는 쪽 왼쪽 간격은 위 값이 좋고, 여는 쪽 오른쪽 간격은 줄이기 → 빌드 때 " 짝을 “(여는)·”(닫는) 두 글자로 나눔.
-# 둘 다 JFonts 의 " 그림(0x22)을 3px 오른쪽으로. 폭은 여는 쪽 11+2=13(뒤 글자와 거의 붙음), 닫는 쪽 11+5=16.
+# 둘 다 JFonts 의 " 그림(0x22)을 3px 오른쪽으로. 폭은 여는 쪽 11+1=12(10/21 13→12), 닫는 쪽 11+5=16.
 QUOTE_OPEN, QUOTE_CLOSE = '“', '”'
-QUOTE_W = {QUOTE_OPEN: 2, QUOTE_CLOSE: QUOTE_PAD}
+QUOTE_W = {QUOTE_OPEN: 1, QUOTE_CLOSE: QUOTE_PAD}   # 10/21 사용자: 여는 쪽 오른쪽 1px 더 줄임(폭 12)
 SYM_SRC.update({QUOTE_OPEN: 0x22, QUOTE_CLOSE: 0x22})
 # 10/20 사용자: 줄 맨 앞 숫자(ASCII 잉크 1px~)가 한글(잉크 4px~)보다 3px 왼쪽으로 튀어나옴 → 앞에 넣는 빈 글자(폭 3)
+# 10/21: 「M. 로이바스」의 공백(10px)이 넓어 보임 → 이 빈 글자로 바꿔 씀
 LEAD_PAD, LEAD_PAD_W = '\u2009', 3
 
 
