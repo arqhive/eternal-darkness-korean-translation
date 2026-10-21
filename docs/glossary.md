@@ -167,7 +167,7 @@
 | Mace / Staff / Metal Staff | 메이스 / 지팡이 / 쇠지팡이 | メイス / 杖 / メタル・スタッフ |
 | Crossbow / Crossbow Bolts | 석궁 / 석궁 화살 | ボウガン / ボウガンの矢 |
 | Blowgun / Blowgun Darts | 바람총 / 바람총 침 | 吹き矢 |
-| Flintlock Pistol / Dual Flintlocks | 수발총 / 쌍수발총 | フリントロック・ピストル |
+| Flintlock Pistol / Dual Flintlocks | 수발총 / 수발총 두 자루 | フリントロック・ピストル |
 | Revolver / Pistol / Automatic Pistol | 리볼버 / 권총 / 자동 권총 | |
 | Shotgun / Double Shotgun / Elephant Gun | 샷건 / 2연발 샷건 / 코끼리 사냥총 | |
 | Rifle / Assault Rifle | 소총 / 돌격 소총 | |
