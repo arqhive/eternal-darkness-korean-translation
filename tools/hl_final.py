@@ -38,10 +38,18 @@ GLOW_ORIGIN = {'g061': (7, 403), 'g059': (106, 392), 'g057': (0, 0), 'g058': (0,
 GLOW_MOVE = {'g053': (-3, 2)}   # 사용자 화면 맞춤(예전 원점 기준 내용 이동), 나머지는 원점 차이로 계산
 YELLOW = ('g081', 'g087', 'g086', 'g088', 'g089', 'g072', 'g071', 'g035')
 PLATE = {'g046': 'g057', 'g047': 'g058'}
+# 10/21 사용자: 책 탭 「해부서」 빛 글씨(g062) 둘레에 노란 네모 → 옅은 빛이 그림 끝까지 퍼져 있었음(가장자리 9.6, 일본판 0.1).
+# 일본판처럼 빛 덩어리(밝기 100 이상) 밖은 6px 안에서 0 이 되게 자르고, 검은 글자가 평상시 글씨(g069)와 겹치게 오른쪽 1px(일본판은 (0,0)에서 겹침).
+# (평상시 글씨 투명도로 glow 를 새로 만들면 테두리까지 글자로 잡혀 뭉툭해져서 안 씀)
+HALO_TRIM = {'g062': 1}
+
+
+MASK_OVERRIDE = {'g061': '%s_共通mask_24px.png'}   # 10/21 「영상」 24px(tools/movie_label.py 가 만듦)
 
 
 def mask(i):
-    return np.asarray(Image.open(MASK % i).convert('L')).astype(float) / 255
+    p = os.path.join(os.path.dirname(MASK), MASK_OVERRIDE[i] % i) if i in MASK_OVERRIDE else MASK % i
+    return np.asarray(Image.open(p).convert('L')).astype(float) / 255
 
 
 def glow(mk, scale, left_only=False):
@@ -71,6 +79,15 @@ def make_glow(i):
         a = glow(mk, np.percentile(P.rgba(i, 'src')[..., :3].mean(2), 99) / 247)
         dx = dy = 0
     return W.shift(a, dx, dy, black=True) if (dx or dy) else a
+
+
+def trim_halo(i, dx):
+    a = np.asarray(Image.open(os.path.join(BAK, i + '_빛이전.png')).convert('RGBA')).astype(float)
+    v = a[..., :3].mean(2)
+    env = binary_fill_holes(binary_closing(np.pad(v > 100, 4), np.ones((5, 5))))[4:-4, 4:-4]
+    a[..., :3] *= np.clip(1 - distance_transform_edt(~env) / 6, 0, 1)[..., None]
+    a[..., 3] = 255
+    return W.shift(a.round().astype(np.uint8), dx, 0, black=True)
 
 
 def make_plate(b):
@@ -107,6 +124,7 @@ def make_yellow(i, ring_px=2.5):
 def main():
     check = '--check' in sys.argv
     out = {i: make_glow(i) for i in GLOW_ORIGIN}
+    out.update({i: trim_halo(i, dx) for i, dx in HALO_TRIM.items()})
     out.update({b: make_plate(b) for b in PLATE})   # 판(g046·g047)은 노란 글씨 판 글씨 마스크 계산보다 먼저
     out.update({i: make_yellow(i) for i in YELLOW})
     bad = 0
