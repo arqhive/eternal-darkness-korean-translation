@@ -38,7 +38,9 @@ def _is_label(x):
     z = x.find(b'\0')
     if z < 0:
         return False
-    return all(c == 95 or 48 <= c <= 57 or 65 <= c <= 90 or 97 <= c <= 122 for c in x[:z]) and not any(x[z:])
+    # 10/21: 이름표에 쉼표·느낌표도 있음(CUST_Shambling_corpses, · MAX_Edward!) → 공백 없는 출력 ASCII 전부 허용.
+    # 예전엔 영문·숫자·_ 만 받아 이 두 줄(영어·일본어 목록 4레코드)을 이름표 없는 「개발용 표식」으로 잘못 뽑았음
+    return z > 0 and all(33 <= c <= 126 for c in x[:z]) and not any(x[z:])
 
 
 def parse_body(head, body, jp):
